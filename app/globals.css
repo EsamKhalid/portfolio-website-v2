@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+  font-family: nemesys;
+  src : url(../fonts/nemesys.ttf)
+}
+
+@font-face{
+  font-family: blender-pro-book;
+  src: url(../fonts/BlenderPro-Book.ttf);
+}
+
+@font-face{
+  font-family: blender-pro-medium;
+  src: url(../fonts/BlenderPro-Medium.ttf);
+}
+
+@font-face{
+  font-family: blender-pro-heavy;
+  src: url(../fonts/BlenderPro-Heavy.ttf);
+}
+
+@font-face{
+  font-family: blender-pro-thin;
+  src: url(../fonts/BlenderPro-Thin.ttf);
+}
+
+
+
+*{
+  margin: 5px;
+}
+
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,7 +48,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  
 }
+
+/*
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,6 +61,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
+}
+
+*/
+
+body {
+  color: rgb(var(--foreground-rgb));
+  
+  /*background: rgb(20, 20, 26);*/
+  @apply bg-cybpnk-blk2
+    
 }
 
 @layer utilities {
@@ -31,3 +79,6 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
