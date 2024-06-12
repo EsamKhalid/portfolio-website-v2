@@ -85,7 +85,40 @@ body {
 @layer components{
   
   .navbar ul li {
-    @apply inline-block mt-[10px] mr-[20px]  cursor-pointer
+    @apply inline-block mt-[10px] mr-[20px]  cursor-pointer text-xl
+  }
+
+
+  .border-corners-lg {
+    --s: 50px; /* the size on the corner */
+    --t: 4px;  /* the thickness of the border */
+    --g: 10px; /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid white; /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+  }
+
+  .border-corners-sm {
+    --s: 10px; /* the size on the corner */
+    --t: 2px;  /* the thickness of the border */
+    --g: 3px; /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid white; /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+  }
+
+  .passTest {
+    width: var(--t);
   }
 
 

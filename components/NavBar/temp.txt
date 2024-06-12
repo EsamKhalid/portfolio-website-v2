@@ -1,0 +1,12 @@
+<Image
+        className="w-96 ml-96 mt-96 border-corners-lg"
+        src={TestImg}
+        alt="TestImage"
+      />
+
+
+<div
+        className="border w-[200px] h-[80px] bg-white mt-28 ml-28 
+                      relative after:absolute after:m-[-22px]  after:bg-cybpnk-blk2 after:w-[40px] 
+                      after:h-[40px] after:rotate-45"
+      ></div>

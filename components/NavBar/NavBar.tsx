@@ -1,4 +1,5 @@
-import { GiAbstract050 } from "react-icons/gi";
+import Image from "next/image";
+import TestImg from "./testImg.png";
 
 /*
 function NavBar() {
@@ -19,19 +20,14 @@ function NavBar() {
   return (
     <>
       <div className="navbar flex justify-between text-white items-center w-full">
-        <h1 className="text-4xl">Esam Khalid</h1>
+        <h1 className="text-4xl border-corners-sm">Esam Khalid</h1>
         <ul className="flex-1 text-center list-none">
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-          <li>Four</li>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Experience</li>
+          <li>Contact</li>
         </ul>
       </div>
-      <div
-        className="border w-[200px] h-[80px] bg-white mt-28 ml-28 
-                      relative after:absolute after:m-[-22px]  after:bg-cybpnk-blk2 after:w-[40px] 
-                      after:h-[40px] after:rotate-45"
-      ></div>
     </>
   );
 }
