@@ -30,7 +30,6 @@
 
 
 *{
-  margin: 5px;
   @apply font-Blender-Pro-Book
 }
 
@@ -72,7 +71,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  @apply bg-cybpnk-blk2
+  @apply bg-black text-white
     
 }
 
@@ -85,9 +84,19 @@ body {
 @layer components{
   
   .navbar ul li {
-    @apply inline-block mt-[10px] mr-[20px]  cursor-pointer text-xl
+    flex-grow: 0;
+    transition-duration: 200ms;
+    @apply inline-block mr-[20px] cursor-pointer text-xl p-5 hover:bg-jms-blue hover:border-corners-sm 
   }
 
+  .NavLogoContainer a{
+    @apply hover:bg-jms-blue m-[5px] size-[50px] flex items-center justify-center hover:border-corners-sm
+    cursor-pointer duration-200
+  }
+
+  .NavLogoContainer a > *{
+    @apply size-[25px]
+  }
 
   .border-corners-lg {
     --s: 50px; /* the size on the corner */
@@ -104,9 +113,9 @@ body {
   }
 
   .border-corners-sm {
-    --s: 10px; /* the size on the corner */
+    --s: 9px; /* the size on the corner */
     --t: 2px;  /* the thickness of the border */
-    --g: 3px; /* the gap between the border and image */
+    --g: 0px; /* the gap between the border and image */
 
     padding: calc(var(--g) + var(--t));
     outline: var(--t) solid white; /* the color here */

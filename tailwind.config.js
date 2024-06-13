@@ -16,6 +16,7 @@ module.exports = {
         'cybpnk-blk' : '#131212',
         'cybpnk-ylw' : '#eabc49',
         'cybpnk-blk2' : '#171619',
+        'jms-blue' : '#14141a',
       }
 
     },
