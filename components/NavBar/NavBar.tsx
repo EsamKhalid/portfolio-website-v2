@@ -32,19 +32,34 @@ function NavBar() {
         >
           <h1 className="text-2xl border-corners-sm p-2">Esam Khalid</h1>
         </Link>
+
         <ul className="text-center list-none">
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Experience</li>
-          <li>Contact</li>
+          <Link href="../AboutPage">
+            <li>About Me</li>
+          </Link>
+
+          <Link href="../ProjectsPage">
+            <li>Projects</li>
+          </Link>
+
+          <Link href="ExperiencePage">
+            <li>Experience</li>
+          </Link>
+
+          <Link href="ContactPage">
+            <li>Contact</li>
+          </Link>
         </ul>
         <div className="NavLogoContainer flex justify-between">
-          <a href="">
+          <Link target="_blank" href="https://github.com/EsamKhalid">
             <FaLinkedin className="NavLogo" />
-          </a>
-          <a>
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/esam-khalid-49648728b/"
+          >
             <FaGithub className="NavLogo" />
-          </a>
+          </Link>
         </div>
       </div>
     </>
