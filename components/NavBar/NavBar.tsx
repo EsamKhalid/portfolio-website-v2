@@ -28,12 +28,12 @@ function NavBar() {
       <div className="navbar flex justify-between text-white items-center px-[5px] pt-[10px] w-screen scale">
         <Link
           href="../"
-          className="hover:bg-jms-blue rounded scale-[.85] p-[10px]"
+          className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
         >
           <h1 className="text-2xl border-corners-sm p-2">Esam Khalid</h1>
         </Link>
 
-        <ul className="text-center list-none">
+        <ul className="text-center list-none [&_*]:text-2xl">
           <Link href="../AboutPage">
             <li>About Me</li>
           </Link>
@@ -61,6 +61,9 @@ function NavBar() {
             <FaGithub className="NavLogo" />
           </Link>
         </div>
+      </div>
+      <div className="flex">
+        <div className="custom-diagonal-white w-full h-[26px]  "></div>
       </div>
     </>
   );

@@ -86,7 +86,7 @@ body {
   .navbar ul li {
     flex-grow: 0;
     transition-duration: 200ms;
-    @apply inline-block mr-[20px] cursor-pointer text-xl p-5 hover:bg-jms-blue hover:border-corners-sm 
+    @apply inline-block mr-[20px] cursor-pointer  p-5 hover:bg-jms-blue hover:border-corners-sm
   }
 
   .NavLogoContainer a{
@@ -95,7 +95,7 @@ body {
   }
 
   .NavLogoContainer a > *{
-    @apply size-[25px]
+    @apply size-[35px]
   }
 
   .border-corners-lg {
@@ -131,14 +131,33 @@ body {
   }
 
 
-  .custom-diagonal {
-    position: absolute;
+  .custom-diagonal-yellow {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(45deg, #fbbf24 25%, transparent 25%, transparent 50%, #fbbf24 50%, #fbbf24 75%, transparent 75%, transparent);
     background-size: 56.57px 56.57px;
+    z-index: -1;
+  }
+
+  .custom-diagonal-white {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%, transparent 50%, white 50%, white 75%, transparent 75%, transparent);
+    background-size: 35px 35px;
+    z-index: -1;
+  }
+
+  .custom-diagonal-white-test {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, transparent 25%, white 25%, white 50%, transparent 50%, transparent 75%, white 75%, white);
+    background-size: 35px 35px;
     z-index: -1;
   }
 }

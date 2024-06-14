@@ -1,3 +1,5 @@
+const { plugin } = require('postcss');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}","./components/**/*.{js,ts,jsx,tsx,mdx}"],
@@ -8,6 +10,7 @@ module.exports = {
         'Blender-Pro-Medium' :['Blender-Pro-Medium'],
         'Blender-Pro-Heavy' :['Blender-Pro-Heavy'],
         'Blender-Pro-Book' :['Blender-Pro-Book'],
+        'Nemesys' :['nemesys'],
       },
       
       colors:{
@@ -17,10 +20,23 @@ module.exports = {
         'cybpnk-ylw' : '#eabc49',
         'cybpnk-blk2' : '#171619',
         'jms-blue' : '#14141a',
-      }
+      },
+
+      animation: {
+        'infinite-scroll': 'infinite-scroll 5s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
+
 
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }
 
