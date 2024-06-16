@@ -8,10 +8,6 @@ export default function page() {
   return (
     <>
       <NavBar />
-      <h1>Projects Page</h1>
-      <SectionBorderLines>
-        <p>Hello work please</p>
-      </SectionBorderLines>
     </>
   );
 }

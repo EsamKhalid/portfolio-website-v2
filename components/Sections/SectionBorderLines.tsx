@@ -1,7 +1,5 @@
 import React from "react";
 
-import SectionSidewaysText from "./SectionSidewaysText";
-
 interface SectionBorderLinesProps {
   children: React.ReactNode;
 }
