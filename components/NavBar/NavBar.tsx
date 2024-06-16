@@ -35,7 +35,7 @@ function NavBar() {
 
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2 - 8;
+    let finalPosition = -width / 2 - 15;
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
@@ -50,7 +50,7 @@ function NavBar() {
   return (
     <>
       <div className="overflow-hidden">
-        <div className="navbar flex justify-between text-white items-center px-[5px] pt-[10px] w-screen scale">
+        <nav className="navbar flex justify-between text-white items-center px-[5px] pt-[10px] w-screen scale">
           <Link
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
@@ -86,13 +86,13 @@ function NavBar() {
               <FaGithub className="NavLogo" />
             </Link>
           </div>
-        </div>
+        </nav>
         <motion.div
           className="flex w-max"
           ref={ref}
           style={{ x: xTranslation }}
         >
-          <div className="custom-diagonal-white-right w-[198vh] h-[23px] mt-2 "></div>
+          <div className="custom-diagonal-white-right w-[100vh] h-[23px] mt-2 "></div>
           <div className="custom-diagonal-white-right w-[100vh] h-[23px] mt-2 "></div>
         </motion.div>
       </div>
