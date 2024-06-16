@@ -62,9 +62,7 @@ function NavBar() {
           </Link>
         </div>
       </div>
-      <div className="flex">
-        <div className="custom-diagonal-white w-full h-[26px]  "></div>
-      </div>
+      <div className="custom-diagonal-white w-full h-[26px]  "></div>
     </>
   );
 }
