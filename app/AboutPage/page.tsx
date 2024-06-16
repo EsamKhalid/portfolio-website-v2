@@ -6,7 +6,9 @@ export default function page() {
   return (
     <>
       <NavBar />
-      <h1>About Page</h1>
+      <div className="px-[25px] pt-[15px]">
+        <h1 className="text-4xl pb-[25px]">// About Page</h1>
+      </div>
     </>
   );
 }

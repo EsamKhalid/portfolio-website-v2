@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-test",
+  "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",
     "react-awesome-shapes": "^0.1.12",

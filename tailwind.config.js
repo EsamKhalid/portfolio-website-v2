@@ -18,7 +18,9 @@ module.exports = {
         'cybpnk-alt' : '#252826',
         'cybpnk-blk' : '#131212',
         'cybpnk-ylw' : '#eabc49',
+        'cybpnk-ylw2' : '#fbbf24',
         'cybpnk-blk2' : '#171619',
+        'cybpnk-brdr' : '#25252a',
         'jms-blue' : '#14141a',
       },
 

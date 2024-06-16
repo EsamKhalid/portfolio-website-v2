@@ -128,21 +128,24 @@ body {
 
   .passTest {
     width: var(--t);
+    
   }
 
-
+  
   .custom-diagonal-yellow {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, #fbbf24 25%, transparent 25%, transparent 50%, #fbbf24 50%, #fbbf24 75%, transparent 75%, transparent);
-    background-size: 56.57px 56.57px;
-    z-index: -1;
+    background-image: linear-gradient(135deg, transparent 25%, transparent 40% ,#fbbf24 25%, #fbbf24 50%, transparent 50%, transparent 90%, #fbbf24 75%);
+    background-size: 40px 40px;
+
   }
 
-  .custom-diagonal-white {
+  .custom-diagonal-white-right{
     background-image: linear-gradient(135deg, transparent 25%, transparent 40% ,white 25%, white 50%, transparent 50%, transparent 90%, white 75%);
+    background-size: 40px 40px;
+
+  }
+
+  .custom-diagonal-white-left{
+    background-image: linear-gradient(45deg, transparent 25%, transparent 40% ,white 25%, white 50%, transparent 50%, transparent 90%, white 75%);
     background-size: 40px 40px;
 
   }
