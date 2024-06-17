@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import NavBar from "@/components/NavBar/NavBar";
@@ -5,6 +7,7 @@ import SectionNavigation from "@/components/SectionNavigation/SectionNavigation"
 
 import { BiArrowFromLeft } from "react-icons/bi";
 import SectionBorderLines from "@/components/Sections/SectionBorderLines";
+import { motion } from "framer-motion";
 
 export default function page() {
   return (
@@ -12,7 +15,7 @@ export default function page() {
       <NavBar />
       <div className="px-[25px] pt-[15px] overflow-hidden">
         <h1 className="text-4xl pb-[25px]">// About Page</h1>
-        <div className="flex">
+        <div className="flex justify-center right-10">
           <SectionNavigation
             Value1={"One"}
             Value2={"Two"}
@@ -20,7 +23,13 @@ export default function page() {
             Value4={"Four"}
           />
         </div>
-
+        <div className="h-[25vh]"></div>
+        <div className="flex justify-center *:w-[150px]  *:h-[150px] *:bg-cybpnk-blk">
+          <motion.div
+            animate={{ x: 100, scale: 1 }}
+            initial={{ scale: 0 }}
+          ></motion.div>
+        </div>
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="One" className="text-2xl text-center">
@@ -44,6 +53,7 @@ export default function page() {
             computer science. Thank you for visiting!
           </p>
         </SectionBorderLines>
+        <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="Two" className="text-2xl text-center">
             Welcome to My Portfolio Two
@@ -66,6 +76,7 @@ export default function page() {
             computer science. Thank you for visiting!
           </p>
         </SectionBorderLines>
+        <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="Three" className="text-2xl text-center">
             Welcome to My Portfolio Three
@@ -88,6 +99,7 @@ export default function page() {
             computer science. Thank you for visiting!
           </p>
         </SectionBorderLines>
+        <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="Four" className="text-2xl text-center">
             Welcome to My Portfolio Four
