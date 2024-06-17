@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { FaMinus, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
+import FlatCornerBox from "../Shapes/FlatCornerBox";
+
 interface valueProps {
   Value1: String;
 }

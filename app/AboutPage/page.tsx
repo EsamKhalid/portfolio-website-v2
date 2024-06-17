@@ -17,7 +17,9 @@ export default function page() {
     <>
       <NavBar />
       <div className="px-[25px] pt-[15px] overflow-hidden">
-        <h1 className="text-4xl pb-[25px]">// About Page</h1>
+        <h1 id="top" className="text-4xl pb-[25px]">
+          // About Page
+        </h1>
         <div className="flex justify-center right-10 fixed">
           <SectionNavigation
             Value1={"One"}
@@ -26,7 +28,6 @@ export default function page() {
             Value4={"Four"}
           />
         </div>
-        <FlatCornerBox corner="top-left" className="bg-cybpnk-ylw2 " />
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="One" className="text-2xl text-center">
