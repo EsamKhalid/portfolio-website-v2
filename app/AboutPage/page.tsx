@@ -4,6 +4,7 @@ import React from "react";
 
 import NavBar from "@/components/NavBar/NavBar";
 import SectionNavigation from "@/components/SectionNavigation/SectionNavigation";
+import FlatCornerBox from "@/components/Shapes/FlatCornerBox";
 
 import { BiArrowFromLeft } from "react-icons/bi";
 import SectionBorderLines from "@/components/Sections/SectionBorderLines";
@@ -25,6 +26,7 @@ export default function page() {
             Value4={"Four"}
           />
         </div>
+        <FlatCornerBox corner="top-left" className="bg-cybpnk-ylw2 " />
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="One" className="text-2xl text-center">
