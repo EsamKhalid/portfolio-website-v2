@@ -12,9 +12,9 @@ interface valueProps {
 export default function NavElement({ Value1 }: valueProps) {
   const [isHovered, setHovered] = useState(false);
   return (
-    <div className="flex items-center p-2 inhe">
-      <FaMinus id="test" />
-      <FaArrowRight />
+    <div className="flex items-center inhe p-2 [&_#hover]:hidden">
+      <FaMinus id="default" />
+      <FaArrowRight id="hover" />
       <motion.div
         className="ml-[2px]"
         onMouseEnter={() => setHovered(true)}

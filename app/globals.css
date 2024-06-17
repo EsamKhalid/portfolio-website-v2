@@ -166,8 +166,14 @@ body {
 
   }
 
-  .inhe > #test{
-    @apply bg-red-500
+
+
+  .inhe:hover #default{
+    @apply hidden
+  }
+
+  .inhe:hover #hover{
+    @apply block
   }
 }
 

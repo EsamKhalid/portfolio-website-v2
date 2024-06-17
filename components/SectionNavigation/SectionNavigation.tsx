@@ -26,7 +26,7 @@ export default function SectionNavigation({
 
   return (
     <>
-      <nav className="block border border-cybpnk-brdr [&_h1]:text-xl p-3 ">
+      <nav className="inline-block justify-evenly border border-cybpnk-brdr [&_h1]:text-xl p-3">
         <NavElement Value1={Value1} />
         <NavElement Value1={Value2} />
         <NavElement Value1={Value3} />
