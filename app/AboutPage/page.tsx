@@ -20,7 +20,7 @@ export default function page() {
         <h1 id="top" className="text-4xl pb-[25px]">
           // About Page
         </h1>
-        <div className="flex justify-center right-10 fixed">
+        <div className="flex justify-center right-10 fixed border">
           <SectionNavigation
             Value1={"One"}
             Value2={"Two"}
