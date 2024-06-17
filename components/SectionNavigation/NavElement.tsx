@@ -4,7 +4,7 @@ import { FaMinus, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 interface valueProps {
-  Value1: string;
+  Value1: String;
 }
 
 export default function NavElement({ Value1 }: valueProps) {
@@ -14,7 +14,7 @@ export default function NavElement({ Value1 }: valueProps) {
       <FaMinus />
       <FaArrowRight className="hidden" />
       <motion.div
-        className="border border-cybpnk-brdr rounded-xl px-[7.5px] py-[2px] ml-[2px]"
+        className="ml-[2px]"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{ x: isHovered ? 10 : 0 }}

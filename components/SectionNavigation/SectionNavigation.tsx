@@ -26,11 +26,11 @@ export default function SectionNavigation({
 
   return (
     <>
-      <nav className="block border border-cybpnk-brdr [&_h1]:text-xl p-3">
-        <NavElement Value1="One" />
-        <NavElement Value1="Two" />
-        <NavElement Value1="Three" />
-        <NavElement Value1="Four" />
+      <nav className="block border border-cybpnk-brdr [&_h1]:text-xl p-3 ">
+        <NavElement Value1={Value1} />
+        <NavElement Value1={Value2} />
+        <NavElement Value1={Value3} />
+        <NavElement Value1={Value4} />
       </nav>
     </>
   );

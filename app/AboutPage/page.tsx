@@ -17,20 +17,13 @@ export default function page() {
       <NavBar />
       <div className="px-[25px] pt-[15px] overflow-hidden">
         <h1 className="text-4xl pb-[25px]">// About Page</h1>
-        <div className="flex justify-center right-10">
+        <div className="flex justify-center right-10 fixed">
           <SectionNavigation
             Value1={"One"}
             Value2={"Two"}
             Value3={"Three"}
             Value4={"Four"}
           />
-        </div>
-        <div className="h-[25vh]"></div>
-        <div className="flex justify-center *:w-[150px]  *:h-[150px] *:bg-cybpnk-blk">
-          <motion.div
-            whileHover={{ scale: 1.05, x: 200 }}
-            transition={{ ease: "linear", duration: 0.15 }}
-          ></motion.div>
         </div>
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
