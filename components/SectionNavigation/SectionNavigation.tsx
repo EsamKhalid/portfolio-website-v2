@@ -1,6 +1,9 @@
-import React from "react";
-import { BiArrowFromLeft } from "react-icons/bi";
+import React, { useState } from "react";
+
 import SectionBorderLines from "../Sections/SectionBorderLines";
+import NavElement from "./NavElement";
+
+import { BiArrowFromLeft } from "react-icons/bi";
 import { FaArrowRight, FaMinus } from "react-icons/fa";
 
 import Link from "next/link";
@@ -19,36 +22,15 @@ export default function SectionNavigation({
   Value3,
   Value4,
 }: ValueProps) {
+  const [isHovered, setHovered] = useState(false);
+
   return (
     <>
       <nav className="block border border-cybpnk-brdr [&_h1]:text-xl p-3">
-        <motion.div className="flex items-center p-2">
-          <FaMinus />
-          <FaArrowRight className="hidden" />
-          <Link href={"#" + Value1}>
-            <h1>One</h1>
-          </Link>
-        </motion.div>
-        <div className="flex  hover:[&_h1]:text-red-600 p-2">
-          <BiArrowFromLeft />
-          <Link href={"#" + Value2}>
-            <h1>Two</h1>
-          </Link>
-        </div>
-
-        <div className="flex  hover:[&_h1]:text-red-600 p-2">
-          <BiArrowFromLeft />
-          <Link href={"#" + Value3}>
-            <h1>Three</h1>
-          </Link>
-        </div>
-
-        <div className="flex  hover:[&_h1]:text-red-600 p-2">
-          <BiArrowFromLeft />
-          <Link href={"#" + Value4}>
-            <h1>Four</h1>
-          </Link>
-        </div>
+        <NavElement Value1="One" />
+        <NavElement Value1="Two" />
+        <NavElement Value1="Three" />
+        <NavElement Value1="Four" />
       </nav>
     </>
   );

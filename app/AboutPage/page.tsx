@@ -10,6 +10,8 @@ import SectionBorderLines from "@/components/Sections/SectionBorderLines";
 import { motion } from "framer-motion";
 
 export default function page() {
+  const [rotate, setRotate] = React.useState(false);
+
   return (
     <>
       <NavBar />
@@ -26,8 +28,8 @@ export default function page() {
         <div className="h-[25vh]"></div>
         <div className="flex justify-center *:w-[150px]  *:h-[150px] *:bg-cybpnk-blk">
           <motion.div
-            animate={{ x: 100, scale: 1 }}
-            initial={{ scale: 0 }}
+            whileHover={{ scale: 1.05, x: 200 }}
+            transition={{ ease: "linear", duration: 0.15 }}
           ></motion.div>
         </div>
         <div className="h-[100vh]"></div>
