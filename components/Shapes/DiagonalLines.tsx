@@ -28,7 +28,7 @@ export default function DiagonalLines({
 
   return (
     <div
-      className={"custom-diagonal-white w-full h-4" + className}
+      className={"custom-diagonal-white w-full h-[25px]" + " " + className}
       style={{ backgroundSize: bgsize, backgroundImage: bgout }}
     ></div>
   );

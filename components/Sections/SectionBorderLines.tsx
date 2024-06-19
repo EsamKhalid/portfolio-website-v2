@@ -13,13 +13,13 @@ export default function SectionBorderLines({
     <>
       <div className="flex justify-center">
         <div className="justify-center inline-block p-2">
-          <div className="border w-[750px] border-cybpnk-brdr p-[20px] pb-[20px]  text-wrap">
+          <div className="border w-[750px] border-cybpnk-brdr p-[20px] pb-[7.5px] text-wrap">
             {children}
-            <div className="custom-diagonal-white-right-static mt-[10px]"></div>
+
             <DiagonalLines
-              className="mt-[10px]"
-              bgsize="10px"
-              rotation="left"
+              className="mt-[10px] "
+              bgsize="35px"
+              rotation="right"
             />
           </div>
         </div>
