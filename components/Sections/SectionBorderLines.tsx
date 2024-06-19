@@ -18,9 +18,9 @@ export default function SectionBorderLines({
 
             <DiagonalLines
               className="mt-[10px] "
-              bgsize="35px"
+              bgsize="25px"
               rotation="right"
-              thicknessType="thin"
+              thicknessType="thick"
             />
           </div>
         </div>
