@@ -36,7 +36,12 @@ export default function SectionNavigation({
           <NavElement Value1={Value2} />
           <NavElement Value1={Value3} />
           <NavElement Value1={Value4} />
-          <div className="cdw-right w-full h-4"></div>
+          <DiagonalLines
+            className="h-[20px] mb-[-5px]"
+            bgsize="15px"
+            rotation="right"
+            thicknessType="thick"
+          />
         </nav>
       </div>
     </>

@@ -184,14 +184,16 @@ body {
 
   }
 
-
-
   .inhe:hover #default{
     @apply hidden
   }
 
   .inhe:hover #hover{
     @apply block
+  }
+
+  .inhe:hover #hiddenIcon{
+    @apply visible
   }
 }
 
