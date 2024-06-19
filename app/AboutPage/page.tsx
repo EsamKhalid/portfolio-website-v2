@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import { useState, useEffect } from "react";
+
 import NavBar from "@/components/NavBar/NavBar";
 import SectionNavigation from "@/components/SectionNavigation/SectionNavigation";
 import FlatCornerBox from "@/components/Shapes/FlatCornerBox";
@@ -9,6 +11,8 @@ import FlatCornerBox from "@/components/Shapes/FlatCornerBox";
 import { BiArrowFromLeft } from "react-icons/bi";
 import SectionBorderLines from "@/components/Sections/SectionBorderLines";
 import { motion } from "framer-motion";
+
+import DiagonalLines from "@/components/Shapes/DiagonalLines";
 
 export default function page() {
   const [rotate, setRotate] = React.useState(false);
@@ -20,14 +24,18 @@ export default function page() {
         <h1 id="top" className="text-4xl pb-[25px]">
           // About Page
         </h1>
-        <div className="flex justify-center right-10 fixed">
+        <div className="flex justify-center right-10 fixed ">
           <SectionNavigation
+            Value0={"Top"}
             Value1={"One"}
             Value2={"Two"}
             Value3={"Three"}
             Value4={"Four"}
           />
         </div>
+
+        <DiagonalLines className="" bgsize="70px" rotation="right" />
+
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="One" className="text-2xl text-center">

@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 /*
 function NavBar() {
@@ -50,7 +50,7 @@ function NavBar() {
   return (
     <>
       <div className="overflow-hidden">
-        <nav className="navbar flex justify-between text-white items-center px-[5px] pt-[10px] w-screen scale">
+        <nav className="navbar flex justify-between bg-black text-white items-center px-[5px] pt-[10px] w-screen scale">
           <Link
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
@@ -92,8 +92,8 @@ function NavBar() {
           ref={ref}
           style={{ x: xTranslation }}
         >
-          <div className="custom-diagonal-white-right w-[98vw] h-[23px] mt-2 "></div>
-          <div className="custom-diagonal-white-right w-[100vw] h-[23px] mt-2 "></div>
+          <div className="custom-diagonal-white-right-animated w-[98vw] h-[23px] mt-2 "></div>
+          <div className="custom-diagonal-white-right-animated w-[100vw] h-[23px] mt-2 "></div>
         </motion.div>
       </div>
     </>

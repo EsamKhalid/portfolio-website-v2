@@ -138,24 +138,42 @@ body {
 
   }
 
-  .custom-diagonal-white-right{
+  .custom-diagonal-white-right-animated{
     background-image: linear-gradient(135deg, transparent 25%, transparent 40% ,white 25%, white 50%, transparent 50%, transparent 90%, white 75%);
     background-size: 40px 40px;
+    @apply bg-black
+  }
 
+  .custom-diagonal-white-right-static{
+    
+    background-image: linear-gradient(135deg, transparent 25%, transparent 40% ,white 25%, white 50%, transparent 50%, transparent 90%, white 75%);
+    background-size: 40px 40px;
+    @apply bg-black w-full h-[25px]
   }
 
   .custom-diagonal-white-left{
     background-image: linear-gradient(45deg, transparent 25%, transparent 40% ,white 25%, white 50%, transparent 50%, transparent 90%, white 75%);
     background-size: 40px 40px;
-
   }
 
-  .custom-diagonal-white-test {
+
+
+  .cdw-right{
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(135deg, transparent 25%, white 25%, white 50%, transparent 50%, transparent 75%, white 75%, white);
+    background-size: 35px 35px;
+    z-index: -1;
+  }
+
+  .cdw-right{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, transparent 25%, white 25%, white 50%, transparent 50%, transparent 75%, white 75%, white);
     background-size: 35px 35px;
     z-index: -1;
   }
