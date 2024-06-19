@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import SectionBorderLines from "../Sections/SectionBorderLines";
 import NavElement from "./NavElement";
+import DiagonalLines from "../Shapes/DiagonalLines";
 
 import { BiArrowFromLeft } from "react-icons/bi";
 import { FaArrowRight, FaMinus } from "react-icons/fa";
@@ -37,8 +38,6 @@ export default function SectionNavigation({
           <NavElement Value1={Value4} />
           <div className="cdw-right w-full h-4"></div>
         </nav>
-
-        <div className="custom-diagonal-white-left w-full"></div>
       </div>
     </>
   );

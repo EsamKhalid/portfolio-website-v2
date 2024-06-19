@@ -34,8 +34,6 @@ export default function page() {
           />
         </div>
 
-        <DiagonalLines className="" bgsize="70px" rotation="right" />
-
         <div className="h-[100vh]"></div>
         <SectionBorderLines>
           <h1 id="One" className="text-2xl text-center">

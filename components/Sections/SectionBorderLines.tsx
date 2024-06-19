@@ -20,6 +20,7 @@ export default function SectionBorderLines({
               className="mt-[10px] "
               bgsize="35px"
               rotation="right"
+              thicknessType="thin"
             />
           </div>
         </div>
