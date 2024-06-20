@@ -91,15 +91,13 @@ export default function Page() {
     />,
   ];
 
-  const list = tilesList.map((tilesList) => <div key="{}">{tilesList}</div>);
-
   return (
     <>
       <NavBar />
       <div className="px-[25px] pt-[15px]">
         <h1 className="text-4xl pb-[25px]">// Projects Page</h1>
         <div className="flex justify-center">
-          <SortableGrid>{list}</SortableGrid>
+          <SortableGrid>{tilesList}</SortableGrid>
         </div>
       </div>
     </>
