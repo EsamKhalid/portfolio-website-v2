@@ -91,7 +91,7 @@ export default function Page() {
     />,
   ];
 
-  const list = tilesList.map((tilesList) => <li key="{item}">{tilesList}</li>);
+  const list = tilesList.map((tilesList) => <div key="{}">{tilesList}</div>);
 
   return (
     <>
