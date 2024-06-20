@@ -62,31 +62,35 @@ export default function Page() {
 export default function Page() {
   const tilesList = [
     <ProjectTile
+      key={1}
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="19/06/24"
+      StartDate="2024-06-18"
       EndDate="29/06/25"
     />,
     <ProjectTile
+      key={2}
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="19/06/24"
+      StartDate="2024-06-7"
       EndDate="29/06/25"
     />,
     <ProjectTile
+      key={3}
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="19/06/24"
+      StartDate="2024-06-15"
       EndDate="29/06/25"
     />,
     <ProjectTile
+      key={4}
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="19/06/24"
+      StartDate="2024-06-22"
       EndDate="29/06/25"
     />,
   ];
