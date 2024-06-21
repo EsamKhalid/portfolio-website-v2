@@ -21,7 +21,7 @@ export default function ProjectTile({
 }: ProjectTileProps) {
   return (
     <>
-      <div className="inline-block border border-cybpnk-brdr p-2 [&_*]:p-2">
+      <div className="inline-block border border-cybpnk-brdr rounded p-2 [&_*]:p-2">
         <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
         <Image
           fill={false}

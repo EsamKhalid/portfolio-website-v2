@@ -1,6 +1,11 @@
+"use client";
+
 import React, { ReactNode } from "react";
 
+import Select from "react-select";
+
 import { Children } from "react";
+import reactSelect from "react-select";
 
 import ProjectTile from "./ProjectTile";
 
@@ -9,44 +14,6 @@ import placeholder from "../../Images/placeholder.avif";
 interface SortableGridProps {
   children: React.ReactNode;
 }
-
-/*
-export default function SortableGrid({ children }: SortableGridProps) {
-  const dateList: number[] = [];
-
-  const test: React.ReactNode[] = [];
-
-  const tempArr: number[] = [];
-
-  React.Children.map(children, (child) => {
-    if (React.isValidElement(child) && child.type === ProjectTile) {
-      dateList.push(new Date(child.props.StartDate).getTime());
-
-      dateList.sort(function (a, b) {
-        return a - b;
-      });
-
-      const date = new Date(child.props.StartDate);
-
-      const dindex = dateList.indexOf(date.getTime());
-
-      if (tempArr[dindex] != undefined) {
-        tempArr[dindex + 1] = dateList[dateList.indexOf(date.getTime())];
-      } else {
-        tempArr[dindex] = dateList[dateList.indexOf(date.getTime())];
-      }
-
-      test.push(child);
-    }
-  });
-
-  for (let i = 0; i < test.length; i++) {
-    console.log(new Date(tempArr[i]));
-  }
-
-  return <div className="grid grid-cols-4 gap-5">{test}</div>;
-}
-  */
 
 export default function SortableGrid({ children }: SortableGridProps) {
   const dateList: number[] = [];
@@ -69,13 +36,26 @@ export default function SortableGrid({ children }: SortableGridProps) {
     React.Children.map(children, (child) => {
       if (React.isValidElement(child) && child.type === ProjectTile) {
         if (dateList[i] === child.props.StartDate.getTime()) {
-          //childList.push(child);
-          //console.log(child.props.StartDate);
           outList.push(child);
         }
       }
     });
   }
 
-  return <div className="grid grid-cols-4 gap-5">{outList}</div>;
+  const options = [
+    { value: "Date Ascending", label: "Date Ascending" },
+    { value: "Date Descending", label: "Date Descending" },
+  ];
+
+  return (
+    <>
+      <div>
+        <select className="text-white bg-black w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5">
+          <option value="DateAscending">Date Ascending</option>
+          <option value="DateDescending">Date Descending</option>
+        </select>
+        <div className="grid grid-cols-4 gap-5">{outList}</div>
+      </div>
+    </>
+  );
 }
