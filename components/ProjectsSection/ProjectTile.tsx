@@ -26,7 +26,7 @@ export default function ProjectTile({
         className=""
         cornerSize="15px"
         borderThickness="2px"
-        borderGap="5px"
+        borderGap="3px"
       >
         <div className="inline-block border border-cybpnk-brdr rounded p-2 [&_*]:p-2">
           <h1 className="text-4xl">{"// " + ProjectTitle}</h1>

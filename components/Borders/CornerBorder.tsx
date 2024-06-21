@@ -21,7 +21,7 @@ export default function CornerBorder({
     "--g": borderGap,
   } as React.CSSProperties;
   return (
-    <div className="border border-corners-sm" style={style}>
+    <div className={"border border-corners " + className} style={style}>
       {children}
     </div>
   );
