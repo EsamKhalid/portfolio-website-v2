@@ -66,31 +66,39 @@ export default function Page() {
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="2024-06-18"
+      StartDate={new Date("2024-06-18")}
       EndDate="29/06/25"
     />,
     <ProjectTile
       key={2}
-      ProjectTitle="Project One"
+      ProjectTitle="Project Two"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="2024-06-7"
+      StartDate={new Date("2024-06-07")}
       EndDate="29/06/25"
     />,
     <ProjectTile
       key={3}
-      ProjectTitle="Project One"
+      ProjectTitle="Project Three"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="2024-06-15"
+      StartDate={new Date("2024-06-15")}
       EndDate="29/06/25"
     />,
     <ProjectTile
       key={4}
-      ProjectTitle="Project One"
+      ProjectTitle="Project Four"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate="2024-06-22"
+      StartDate={new Date("2024-06-22")}
+      EndDate="29/06/25"
+    />,
+    <ProjectTile
+      key={4}
+      ProjectTitle="Project Five"
+      ImageSource={placeholder}
+      ProjectType="Personal Project"
+      StartDate={new Date("2024-08-22")}
       EndDate="29/06/25"
     />,
   ];

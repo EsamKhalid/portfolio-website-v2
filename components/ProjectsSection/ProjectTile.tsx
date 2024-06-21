@@ -7,7 +7,7 @@ import DiagonalLines from "../Shapes/DiagonalLines";
 interface ProjectTileProps {
   ProjectTitle: string;
   ProjectType: string;
-  StartDate: string;
+  StartDate: Date;
   EndDate: string;
   ImageSource: StaticImageData;
 }
@@ -30,7 +30,7 @@ export default function ProjectTile({
           alt="image"
         />
         <h2>//Type: {ProjectType}</h2>
-        <h2>//Start_Date: {StartDate}</h2>
+        <h2>//Start_Date: {new Date(StartDate).toLocaleDateString()}</h2>
         <h2>//End_Date: {EndDate}</h2>
         <DiagonalLines
           className="mt-[10px] h-[18px]"
