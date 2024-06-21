@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 import Select from "react-select";
 
@@ -18,41 +18,61 @@ interface SortableGridProps {
 export default function SortableGrid({ children }: SortableGridProps) {
   const [selectValue, setSelectValue] = useState("");
 
-  const dateList: number[] = [];
+  const [dateList, setDateList] = useState<number[]>([]);
 
-  const outList: ReactNode[] = [];
+  const [outList, setOutList] = useState<ReactNode[]>([]);
 
   const childList: ReactNode[] = [];
 
-  React.Children.map(children, (child) => {
-    if (React.isValidElement(child) && child.type === ProjectTile) {
-      dateList.push(child.props.StartDate.getTime());
-    }
-  });
+  useEffect(() => {
+    sortElements();
+  }, []);
 
-  dateList.sort(function (a, b) {
-    return a - b;
-  });
-
-  function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
-    setSelectValue(event.target.value);
-    console.log(event.target.value);
-  }
-
-  for (let i = 0; i < dateList.length; i++) {
+  function sortDates() {
+    //resets the date list
+    setDateList([]);
+    //populates the dateList array with the start dates of the projects
     React.Children.map(children, (child) => {
       if (React.isValidElement(child) && child.type === ProjectTile) {
-        if (dateList[i] === child.props.StartDate.getTime()) {
-          outList.push(child);
-        }
+        dateList.push(child.props.StartDate.getTime());
       }
     });
+
+    if (selectValue === "DateAscending") {
+      dateList.sort(function (a, b) {
+        return a - b;
+      });
+    } else if (selectValue === "DateDescending") {
+      dateList.sort(function (a, b) {
+        return b - a;
+      });
+    }
   }
 
-  const options = [
-    { value: "Date Ascending", label: "Date Ascending" },
-    { value: "Date Descending", label: "Date Descending" },
-  ];
+  function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
+    var test = event.target.value;
+    console.log(test);
+    setSelectValue(test);
+    //console.log(event.target.value);
+
+    sortElements();
+  }
+
+  function sortElements() {
+    sortDates();
+    setOutList([]);
+    let newOutList: React.ReactNode[] = [];
+    for (let i = 0; i < dateList.length; i++) {
+      React.Children.map(children, (child) => {
+        if (React.isValidElement(child) && child.type === ProjectTile) {
+          if (dateList[i] === child.props.StartDate.getTime()) {
+            newOutList.push(child);
+          }
+        }
+      });
+    }
+    setOutList(newOutList);
+  }
 
   return (
     <>
