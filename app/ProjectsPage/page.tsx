@@ -95,7 +95,7 @@ export default function Page() {
       EndDate="29/06/25"
     />,
     <ProjectTile
-      key={4}
+      key={5}
       ProjectTitle="Project Five"
       ImageSource={placeholder}
       ProjectType="Personal Project"

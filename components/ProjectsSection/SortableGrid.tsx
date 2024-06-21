@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 
 import Select from "react-select";
 
@@ -16,6 +16,8 @@ interface SortableGridProps {
 }
 
 export default function SortableGrid({ children }: SortableGridProps) {
+  const [selectValue, setSelectValue] = useState("");
+
   const dateList: number[] = [];
 
   const outList: ReactNode[] = [];
@@ -31,6 +33,11 @@ export default function SortableGrid({ children }: SortableGridProps) {
   dateList.sort(function (a, b) {
     return a - b;
   });
+
+  function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
+    setSelectValue(event.target.value);
+    console.log(event.target.value);
+  }
 
   for (let i = 0; i < dateList.length; i++) {
     React.Children.map(children, (child) => {
@@ -50,7 +57,10 @@ export default function SortableGrid({ children }: SortableGridProps) {
   return (
     <>
       <div>
-        <select className="text-white bg-black w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5">
+        <select
+          onChange={handleSelect}
+          className="text-white bg-black w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5"
+        >
           <option value="DateAscending">Date Ascending</option>
           <option value="DateDescending">Date Descending</option>
         </select>
