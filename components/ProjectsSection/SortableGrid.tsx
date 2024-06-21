@@ -2,10 +2,7 @@
 
 import React, { ReactNode } from "react";
 
-import Select from "react-select";
-
 import { Children } from "react";
-import reactSelect from "react-select";
 
 import ProjectTile from "./ProjectTile";
 
@@ -41,11 +38,6 @@ export default function SortableGrid({ children }: SortableGridProps) {
       }
     });
   }
-
-  const options = [
-    { value: "Date Ascending", label: "Date Ascending" },
-    { value: "Date Descending", label: "Date Descending" },
-  ];
 
   return (
     <>
