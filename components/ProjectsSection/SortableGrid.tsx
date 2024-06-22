@@ -16,7 +16,7 @@ interface SortableGridProps {
 }
 
 export default function SortableGrid({ children }: SortableGridProps) {
-  var [selectValue, setSelectValue] = useState("");
+  var selectValue = "DateAscending";
 
   const [dateList, setDateList] = useState<number[]>([]);
 
@@ -50,8 +50,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
   }
 
   function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
-    console.log(event.target.value);
-    setSelectValue(event.target.value);
+    selectValue = event.target.value;
     sortElements();
   }
 
