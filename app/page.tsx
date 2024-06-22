@@ -16,8 +16,7 @@ export default function Home() {
       <div className="px-[25px] pt-[15px]">
         <h1 className="text-4xl pb-[25px]">// Home Page</h1>
         <div className="flex justify-center">
-          <SectionSidewaysText textValue="Esam_Khalid" />
-          <SectionBorderLines>
+          <SectionBorderLines className="w-[90vw]">
             <h1 className="text-2xl text-center">Welcome to My Portfolio</h1>
             <br />
             <p className="text-xl text-center">

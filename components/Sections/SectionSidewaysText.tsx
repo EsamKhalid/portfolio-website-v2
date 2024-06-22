@@ -15,8 +15,8 @@ export default function SectionSidewaysText({
 }: SectionSidewaysTextProps) {
   return (
     <>
-      <div className="w-full border m-2">
-        <div className="h-[75px] border m-2 w-auto -rotate-90 absolute left-0">
+      <div className="w-[75px] h-auto border m-2">
+        <div className="h-[75px] border m-2 w-auto -rotate-90 absolute">
           <CustomSVG className="h-full w-full p-2" />
         </div>
       </div>
