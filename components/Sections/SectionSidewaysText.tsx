@@ -15,10 +15,11 @@ export default function SectionSidewaysText({
 }: SectionSidewaysTextProps) {
   return (
     <>
-      <div className="h-[75px] border m-2 w-full -rotate-90">
-        <CustomSVG className="h-full w-full p-2" />
+      <div className="w-full border m-2">
+        <div className="h-[75px] border m-2 w-auto -rotate-90 absolute left-0">
+          <CustomSVG className="h-full w-full p-2" />
+        </div>
       </div>
-      <div className="h-auto m-2 border border-cybpnk-brdr w-[75px] flex relative "></div>
     </>
   );
 }
