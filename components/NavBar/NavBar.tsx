@@ -56,17 +56,14 @@ function NavBar() {
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
           >
             <h1
-              className="text-2xl border-corners-sm p-2"
-              style={{ fontSize: "2vw" }}
+              className="text-2xl border-corners-sm p-[2vw]"
+              style={{ fontSize: "2.75vw" }}
             >
               Esam Khalid
             </h1>
           </Link>
 
-          <ul
-            className="text-center list-none [&_*]:p-0"
-            style={{ fontSize: "2vw" }}
-          >
+          <ul className="text-center list-none" style={{ fontSize: "2vw" }}>
             <Link href="../AboutPage">
               <li>About Me</li>
             </Link>
