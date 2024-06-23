@@ -50,15 +50,23 @@ function NavBar() {
   return (
     <>
       <div className="overflow-hidden">
-        <nav className="navbar flex justify-between bg-black text-white items-center px-[5px] pt-[10px] w-screen scale">
+        <nav className="navbar flex justify-between bg-black text-white items-center px-[3vw] pt-[10px]  w-screen scale">
           <Link
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
           >
-            <h1 className="text-2xl border-corners-sm p-2">Esam Khalid</h1>
+            <h1
+              className="text-2xl border-corners-sm p-2"
+              style={{ fontSize: "2vw" }}
+            >
+              Esam Khalid
+            </h1>
           </Link>
 
-          <ul className="text-center list-none [&_*]:text-2xl">
+          <ul
+            className="text-center list-none [&_*]:p-0"
+            style={{ fontSize: "2vw" }}
+          >
             <Link href="../AboutPage">
               <li>About Me</li>
             </Link>

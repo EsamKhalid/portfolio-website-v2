@@ -86,7 +86,7 @@ body {
   .navbar ul li {
     flex-grow: 0;
     transition-duration: 200ms;
-    @apply inline-block mr-[20px] cursor-pointer  p-5 hover:bg-jms-blue hover:border-corners-sm
+    @apply inline-block mr-[20px] cursor-pointer p-5 hover:bg-jms-blue hover:border-corners-sm
   }
 
   .NavLogoContainer a{
