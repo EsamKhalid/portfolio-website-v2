@@ -5,9 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import TestImg from "./testImg.png";
 
+import CornerBorder from "../Borders/CornerBorder";
+
 import { FaFontAwesomeLogoFull, FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
@@ -55,10 +58,17 @@ function NavBar() {
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
           >
-            <h1 className="text-2xl border-corners-sm p-2">Esam Khalid</h1>
+            <CornerBorder
+              className=""
+              cornerSize="9px"
+              borderThickness="2px"
+              borderGap="3px"
+            >
+              <h1 className="p-2 text-xl sm:text-2xl">Esam Khalid</h1>
+            </CornerBorder>
           </Link>
 
-          <ul className="text-center list-none [&_*]:text-2xl">
+          <ul className="text-center list-none">
             <Link href="../AboutPage">
               <li>About Me</li>
             </Link>
