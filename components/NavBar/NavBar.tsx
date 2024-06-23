@@ -53,7 +53,7 @@ function NavBar() {
   return (
     <>
       <div className="overflow-hidden">
-        <nav className="navbar flex justify-between bg-black text-white items-center px-[5px] pt-[10px] w-screen scale">
+        <nav className="navbar flex justify-between bg-black text-white items-center px-[3vw] pt-[10px]  w-screen scale">
           <Link
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
