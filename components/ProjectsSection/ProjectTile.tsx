@@ -25,19 +25,19 @@ export default function ProjectTile({
   return (
     <>
       <CornerBorder
-        className={className}
+        className={"min-h-fit min-w-fit " + className}
         cornerSize="15px"
         borderThickness="2px"
         borderGap="3px"
       >
         <div
-          className="inline-block border border-cybpnk-brdr rounded p-2 [&_*]:p-2
-        "
+          className="inline-block border border-cybpnk-brdr rounded  p-2 [&_*]:p-1 md:[&_*]:p-2
+        min-h-full min-w-fit"
         >
-          <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
+          <h1 className="text-4xl text-nowrap">{"// " + ProjectTitle}</h1>
           <Image
             fill={false}
-            className="w-[250px] h-[250px]"
+            className="sm:w-[200px] sm:h-[200px] md:min-w-[250px]  md:min-h-[250px]"
             src={ImageSource}
             alt="image"
           />
