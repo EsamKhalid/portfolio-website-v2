@@ -102,8 +102,8 @@ function NavBar() {
           ref={ref}
           style={{ x: xTranslation }}
         >
-          <div className="custom-diagonal-white-right-animated w-[98vw] h-[23px] mt-2 "></div>
-          <div className="custom-diagonal-white-right-animated w-[100vw] h-[23px] mt-2 "></div>
+          <div className="custom-diagonal-white-right-animated w-[98vw] h-[15px]  md:h-[23px] mt-2 "></div>
+          <div className="custom-diagonal-white-right-animated w-[100vw] h-[15px]  md:h-[23px] mt-2 "></div>
         </motion.div>
       </div>
     </>
