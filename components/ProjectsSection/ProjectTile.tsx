@@ -11,6 +11,7 @@ interface ProjectTileProps {
   StartDate: Date;
   EndDate: string;
   ImageSource: StaticImageData;
+  className: string;
 }
 
 export default function ProjectTile({
@@ -19,11 +20,12 @@ export default function ProjectTile({
   StartDate,
   EndDate,
   ImageSource,
+  className,
 }: ProjectTileProps) {
   return (
     <>
       <CornerBorder
-        className="min-w-max"
+        className={className}
         cornerSize="15px"
         borderThickness="2px"
         borderGap="3px"

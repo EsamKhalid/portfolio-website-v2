@@ -63,6 +63,7 @@ export default function Page() {
 export default function Page() {
   const tilesList = [
     <ProjectTile
+      className=""
       key={1}
       ProjectTitle="Project One"
       ImageSource={placeholder}
@@ -71,6 +72,7 @@ export default function Page() {
       EndDate="29/06/25"
     />,
     <ProjectTile
+      className=""
       key={2}
       ProjectTitle="Project Two"
       ImageSource={placeholder}
@@ -79,6 +81,7 @@ export default function Page() {
       EndDate="29/06/25"
     />,
     <ProjectTile
+      className=""
       key={3}
       ProjectTitle="Project Three"
       ImageSource={placeholder}
@@ -87,6 +90,7 @@ export default function Page() {
       EndDate="29/06/25"
     />,
     <ProjectTile
+      className=""
       key={4}
       ProjectTitle="Project Four"
       ImageSource={placeholder}
@@ -95,6 +99,7 @@ export default function Page() {
       EndDate="29/06/25"
     />,
     <ProjectTile
+      className=""
       key={5}
       ProjectTitle="Project Five"
       ImageSource={placeholder}
