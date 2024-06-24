@@ -79,7 +79,9 @@ export default function SortableGrid({ children }: SortableGridProps) {
           <option value="DateAscending">Date Ascending</option>
           <option value="DateDescending">Date Descending</option>
         </select>
-        <div className="grid grid-cols-4 gap-5">{outList}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {outList}
+        </div>
       </div>
     </>
   );

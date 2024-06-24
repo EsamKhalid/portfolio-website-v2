@@ -23,12 +23,15 @@ export default function ProjectTile({
   return (
     <>
       <CornerBorder
-        className=""
+        className="min-w-max"
         cornerSize="15px"
         borderThickness="2px"
         borderGap="3px"
       >
-        <div className="inline-block border border-cybpnk-brdr rounded p-2 [&_*]:p-2">
+        <div
+          className="inline-block border border-cybpnk-brdr rounded p-2 [&_*]:p-2
+        "
+        >
           <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
           <Image
             fill={false}
