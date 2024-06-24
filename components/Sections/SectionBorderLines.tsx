@@ -18,7 +18,7 @@ export default function SectionBorderLines({
         <div className="justify-center inline-block p-2">
           <div
             className={
-              "border w-[50vh] border-cybpnk-brdr p-[20px] pb-[7.5px]  text-wrap " +
+              "border w-full border-cybpnk-brdr p-[20px] pb-[7.5px]  text-wrap " +
               className
             }
           >

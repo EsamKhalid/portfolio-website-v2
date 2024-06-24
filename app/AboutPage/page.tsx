@@ -118,14 +118,19 @@ export default function page() {
             </p>
           </SectionBorderLines>
         </div>
-        <div className="flex justify-center fixed sm:right-0 sm:top-0 sm:mt-24  md:top-5 md:right-9">
-          <SectionNavigation
-            Value0={"Top"}
-            Value1={"One"}
-            Value2={"Two"}
-            Value3={"Three"}
-            Value4={"Four"}
-          />
+        <div
+          className="w-[15%] fixed  h-full sm:right-0 sm:top-[100px]   
+        md:top-[200px] md:right-0"
+        >
+          <div className="flex justify-center ">
+            <SectionNavigation
+              Value0={"Top"}
+              Value1={"One"}
+              Value2={"Two"}
+              Value3={"Three"}
+              Value4={"Four"}
+            />
+          </div>
         </div>
       </div>
     </>
