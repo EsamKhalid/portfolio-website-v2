@@ -60,7 +60,11 @@ export default function SortableGrid({ children }: SortableGridProps) {
     for (let i = 0; i < dateList.length; i++) {
       React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === ProjectTile) {
-          if (dateList[i] === child.props.StartDate.getTime()) {
+          if (
+            dateList[i] === child.props.StartDate.getTime() &&
+            !newOutList.includes(child)
+          ) {
+            console.log(i);
             newOutList.push(child);
           }
         }
@@ -79,7 +83,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
           <option value="DateAscending">Date Ascending</option>
           <option value="DateDescending">Date Descending</option>
         </select>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
           {outList}
         </div>
       </div>
