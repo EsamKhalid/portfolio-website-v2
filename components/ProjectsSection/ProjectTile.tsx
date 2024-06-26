@@ -50,9 +50,18 @@ export default function ProjectTile({
               src={ImageSource}
               alt="image"
             />
-            <h2>//Type: {ProjectType}</h2>
-            <h2>//Start_Date: {new Date(StartDate).toLocaleDateString()}</h2>
-            <h2>//End_Date: {EndDate}</h2>
+            <h2 className="text-lg">
+              <span className="text-xs m-[-5px]">//Type:</span> <br />
+              {ProjectType}
+            </h2>
+            <h2 className="text-lg">
+              <span className="text-xs m-[-8px]">//Start_Date: </span> <br />
+              {new Date(StartDate).toLocaleDateString()}
+            </h2>
+            <h2 className="text-lg">
+              <span className="text-xs m-[-8px]">//End_Date: </span> <br />
+              {EndDate}
+            </h2>
             <DiagonalLines
               className="mt-[10px] h-[18px]"
               bgsize="25px"
