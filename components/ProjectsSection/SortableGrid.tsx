@@ -2,6 +2,8 @@
 
 import React, { ReactNode, useEffect, useState } from "react";
 
+import Link from "next/link";
+
 import Select from "react-select";
 
 import { Children } from "react";
@@ -62,10 +64,14 @@ export default function SortableGrid({ children }: SortableGridProps) {
         if (React.isValidElement(child) && child.type === ProjectTile) {
           if (
             dateList[i] === child.props.StartDate.getTime() &&
-            !newOutList.includes(child)
+            !newOutList.includes(child) &&
+            newOutList.length < dateList.length - 1
           ) {
             console.log(i);
-            newOutList.push(child);
+            //over here use the $ sign to access the childs name and append it to the link
+            newOutList.push(
+              <Link href="../ProjectsPage/ProjectOne">{child}</Link>
+            );
           }
         }
       });
