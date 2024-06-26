@@ -25,6 +25,8 @@ export default function SortableGrid({ children }: SortableGridProps) {
 
   const childList: ReactNode[] = [];
 
+  let keyList: any[] = [];
+
   useEffect(() => {
     sortElements();
   }, []);
@@ -62,24 +64,25 @@ export default function SortableGrid({ children }: SortableGridProps) {
     for (let i = 0; i < dateList.length; i++) {
       React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === ProjectTile) {
+          var childOut = (
+            <Link
+              key={child.key}
+              href={`../ProjectsPage/${child.props.ProjectTitle.replace(
+                /\s/g,
+                ""
+              )}`}
+            >
+              {child}
+            </Link>
+          );
           if (
             dateList[i] === child.props.StartDate.getTime() &&
-            !newOutList.includes(child) &&
-            newOutList.length < dateList.length - 1
+            !keyList.includes(child.key)
           ) {
-            console.log(i);
+            console.log(newOutList.includes(childOut));
             //over here use the $ sign to access the childs name and append it to the link
-            newOutList.push(
-              <Link
-                key={child.key}
-                href={`../ProjectsPage/${child.props.ProjectTitle.replace(
-                  /\s/g,
-                  ""
-                )}`}
-              >
-                {child}
-              </Link>
-            );
+            newOutList.push(childOut);
+            keyList.push(child.key);
           }
         }
       });
