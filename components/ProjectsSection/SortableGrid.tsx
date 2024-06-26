@@ -70,7 +70,15 @@ export default function SortableGrid({ children }: SortableGridProps) {
             console.log(i);
             //over here use the $ sign to access the childs name and append it to the link
             newOutList.push(
-              <Link href="../ProjectsPage/ProjectOne">{child}</Link>
+              <Link
+                key={child.key}
+                href={`../ProjectsPage/${child.props.ProjectTitle.replace(
+                  /\s/g,
+                  ""
+                )}`}
+              >
+                {child}
+              </Link>
             );
           }
         }
@@ -78,6 +86,10 @@ export default function SortableGrid({ children }: SortableGridProps) {
     }
     setOutList(newOutList);
   }
+
+  const str: string = "hello world";
+
+  console.log(str.replace(/\s/g, ""));
 
   return (
     <>

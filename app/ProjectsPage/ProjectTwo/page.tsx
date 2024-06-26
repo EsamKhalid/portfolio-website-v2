@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <NavBar />
-      <h1>Project One</h1>
+      <h1>Project Two</h1>
     </>
   );
 }
