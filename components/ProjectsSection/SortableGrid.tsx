@@ -2,6 +2,8 @@
 
 import React, { ReactNode, useEffect, useState } from "react";
 
+import Link from "next/link";
+
 import Select from "react-select";
 
 import { Children } from "react";
@@ -22,6 +24,8 @@ export default function SortableGrid({ children }: SortableGridProps) {
   const [outList, setOutList] = useState<ReactNode[]>([]);
 
   const childList: ReactNode[] = [];
+
+  let keyList: any[] = [];
 
   useEffect(() => {
     sortElements();
@@ -60,18 +64,35 @@ export default function SortableGrid({ children }: SortableGridProps) {
     for (let i = 0; i < dateList.length; i++) {
       React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === ProjectTile) {
+          var childOut = (
+            <Link
+              key={child.key}
+              href={`../ProjectsPage/${child.props.ProjectTitle.replace(
+                /\s/g,
+                ""
+              )}`}
+            >
+              {child}
+            </Link>
+          );
           if (
             dateList[i] === child.props.StartDate.getTime() &&
-            !newOutList.includes(child)
+            !keyList.includes(child.key)
           ) {
-            console.log(i);
-            newOutList.push(child);
+            console.log(newOutList.includes(childOut));
+            //over here use the $ sign to access the childs name and append it to the link
+            newOutList.push(childOut);
+            keyList.push(child.key);
           }
         }
       });
     }
     setOutList(newOutList);
   }
+
+  const str: string = "hello world";
+
+  console.log(str.replace(/\s/g, ""));
 
   return (
     <>

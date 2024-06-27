@@ -107,15 +107,6 @@ export default function Page() {
       StartDate={new Date("2024-08-22")}
       EndDate="29/06/25"
     />,
-    <ProjectTile
-      className=""
-      key={6}
-      ProjectTitle="Project Five"
-      ImageSource={placeholder}
-      ProjectType="Personal Project"
-      StartDate={new Date("2024-08-22")}
-      EndDate="29/06/25"
-    />,
   ];
 
   return (

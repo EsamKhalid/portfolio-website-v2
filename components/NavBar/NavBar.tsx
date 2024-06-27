@@ -69,19 +69,19 @@ function NavBar() {
           </Link>
 
           <ul className="text-center list-none">
-            <Link href="../AboutPage">
+            <Link href="/AboutPage">
               <li>About Me</li>
             </Link>
 
-            <Link href="../ProjectsPage">
+            <Link href="/ProjectsPage">
               <li>Projects</li>
             </Link>
 
-            <Link href="ExperiencePage">
+            <Link href="/ExperiencePage">
               <li>Experience</li>
             </Link>
 
-            <Link href="ContactPage">
+            <Link href="/ContactPage">
               <li>Contact</li>
             </Link>
           </ul>
