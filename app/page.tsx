@@ -16,10 +16,10 @@ export default function Home() {
       <div className="px-[25px] pt-[15px]">
         <h1 className="text-4xl pb-[25px]">// Home Page</h1>
         <div className="flex justify-center">
-          <SectionBorderLines className="w-[90vw]">
-            <h1 className="text-2xl text-center">Welcome to My Portfolio</h1>
+          <SectionBorderLines id="" className="w-[90vw]">
+            <h1 className="text-2xl">Welcome to My Portfolio</h1>
             <br />
-            <p className="text-xl text-center">
+            <p className="text-xl">
               Hello! I'm <span className="text-cybpnk-ylw2">Esam Khalid</span>
               , a passionate and dedicated computer science student at Aston
               University, currently pursuing a BSc Hons in Computer Science with
