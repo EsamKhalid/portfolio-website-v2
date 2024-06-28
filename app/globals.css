@@ -212,6 +212,20 @@ body {
   .inhe:hover #hiddenIcon{
     @apply visible
   }
+
+  .carouselBtn {
+    @apply block absolute top-0 bottom-0 p-[1rem] transition duration-100 ease-in-out
+  }
+
+  .carouselBtn:hover {
+    @apply bg-[rgb(255,255,255,0.2)] 
+  }
+
+  .carouselBtn > *{
+    @apply w-[1.5rem] h-[1.5rem]
+  }
+
+  
 }
 
 
