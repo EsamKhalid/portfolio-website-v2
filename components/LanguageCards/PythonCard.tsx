@@ -14,15 +14,13 @@ export default function PythonCard() {
         id=""
         className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-full"
       >
-        <div className="flex justify-evenly">
-          <FaPython className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
-          <h1 className="text-4xl text-center m-[15%] sm:m-[7.5%] md:m-[10%]">
-            Python
-          </h1>
+        <div className="logoTextCenter justify-evenly">
+          <FaPython className="size-[25%] sm:size-[15%] md:size-[10%] sm:m-[5%] m-[10%] " />
+          <h1 className="text-4xl">Python</h1>
         </div>
-        <div className="flex justify-evenly">
+        <div className="logoTextCenter justify-evenly">
           <h1 className="text-2xl">Proficiency: </h1>
-          <div className="flex [&_*]:mx-1 mt-2 align-middle">
+          <div className="flex [&_*]:mx-1">
             <FaStar />
             <FaStar />
             <FaStar />

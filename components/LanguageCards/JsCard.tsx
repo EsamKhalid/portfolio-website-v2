@@ -1,10 +1,8 @@
 import React from "react";
 
-import SectionBorderLines from "../Sections/SectionBorderLines";
 import SectionNoDiag from "../Sections/SectionNoDiag";
 
 import { FaJs } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 
@@ -15,15 +13,13 @@ export default function JsCard() {
         id=""
         className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-full"
       >
-        <div className="flex justify-evenly">
-          <FaJs className="size-[25%] sm:size-[10%] sm:m-[5%] mt-[7.5%] ml-[10%]  md:size-[15%] md:m-5 md:ml-12" />
-          <h1 className="text-4xl text-center my-[15%] mx-[5%] sm:m-[7.5%] md:m-[10%]">
-            JavaScript
-          </h1>
+        <div className="justify-evenly logoTextCenter">
+          <FaJs className="size-[25%] sm:size-[15%] md:size-[10%] sm:m-[5%] m-[10%]" />
+          <h1 className="text-4xl">JavaScript</h1>
         </div>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly logoTextCenter">
           <h1 className="text-2xl">Proficiency: </h1>
-          <div className="flex [&_*]:mx-1 mt-2 align-middle">
+          <div className="flex [&_*]:mx-1">
             <FaStar />
             <FaStar />
             <FaStar />

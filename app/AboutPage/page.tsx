@@ -58,8 +58,12 @@ export default function page() {
               <h1 className="text-4xl">//Skills</h1>
               <h2 className="text-2xl text-left">//Languages</h2>
               <LanguageCarousel />
-              <h2 className="text-2xl text-left pt-10">//Frameworks</h2>
-              <h2 className="text-2xl text-left pt-10">//Libraries</h2>
+              <h2 className="text-2xl text-left pt-10">//Web_Stack</h2>
+              <div className="inline-block justify-start w-full ">
+                <div className="logoTextCenter">
+                  <FaReact style={{ verticalAlign: "bottom" }} /> <h1>test</h1>
+                </div>
+              </div>
             </SectionBorderLines>
           </div>
         </div>
