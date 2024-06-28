@@ -4,11 +4,18 @@ import React from "react";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-interface LanguageCarouselProps {
-  Cards: JSX.Element[];
-}
+import TestCard from "../LanugageCards/TestCard";
+import PythonCard from "../LanugageCards/PythonCard";
+import JavaCard from "../LanugageCards/JavaCard";
 
-export default function LanguageCarousel({ Cards }: LanguageCarouselProps) {
+const Cards: JSX.Element[] = [
+  <PythonCard />,
+  <JavaCard />,
+  <TestCard title="Test3"></TestCard>,
+  <TestCard title="Test4"></TestCard>,
+];
+
+export default function LanguageCarousel() {
   const [currentCard, setCurrentCard] = React.useState(0);
 
   function showNextImage() {
