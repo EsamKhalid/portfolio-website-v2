@@ -214,16 +214,17 @@ body {
   }
 
   .carouselBtn {
-    @apply block absolute top-0 bottom-0 p-[1rem] transition duration-100 ease-in-out
+    @apply block absolute top-0 bottom-0 p-[1rem] transition duration-100 ease-in-out rounded
   }
 
-  .carouselBtn:hover {
-    @apply bg-[rgb(255,255,255,0.2)] 
-  }
+   .carouselBtn:hover {
+    @apply scale-[1.5] transition duration-200 ease-in-out
+  } 
 
   .carouselBtn > *{
     @apply w-[1.5rem] h-[1.5rem]
   }
+ 
 
   
 }

@@ -11,14 +11,18 @@ interface LanguageCarouselProps {
 export default function LanguageCarousel({ Cards }: LanguageCarouselProps) {
   const [currentCard, setCurrentCard] = React.useState(0);
 
+  function showNextImage() {}
+
+  function showPreviousImage() {}
+
   return (
     <>
       <div className="relative">
         {Cards[currentCard]}
-        <button className="carouselBtn left-0">
+        <button onClick={showPreviousImage} className="carouselBtn left-0">
           <FaArrowLeft />
         </button>
-        <button className="carouselBtn right-0">
+        <button onClick={showPreviousImage} className="carouselBtn right-0">
           <FaArrowRight />
         </button>
       </div>
