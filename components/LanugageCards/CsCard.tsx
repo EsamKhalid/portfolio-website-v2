@@ -14,7 +14,7 @@ export default function CsCard() {
     <>
       <SectionNoDiag
         id=""
-        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-[35vh]"
+        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-full"
       >
         <div className="flex justify-evenly">
           <CSharp className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
@@ -34,7 +34,7 @@ export default function CsCard() {
           <p className="border border-cybpnk-brdr p-2 m-10 ">
             I first started learning C# towards the end of the first year of
             sixth form, C# was not taught in the curriculum for the sixth form
-            however, I wanted to make my A level coursework project using{" "}
+            however, I wanted to make my A level coursework project using {""}
             <a
               className="text-cybpnk-ylw2 underline underline-offset-2"
               href="https://unity.com"
@@ -44,7 +44,7 @@ export default function CsCard() {
             , a 3d game engine that uses C# as its main language. Over the
             course of around 6 months, I learnt the basics of C# and how to use
             it in Unity to create a 3D game. I then used this knowledge to
-            create a 3D application for my
+            create a 3D application for my {""}
             {/* Make this link to the A level coursework project page when its done */}
             <a className="text-cybpnk-ylw2 underline underline-offset-2">
               A level coursework project

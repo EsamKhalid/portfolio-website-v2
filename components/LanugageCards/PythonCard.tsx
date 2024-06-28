@@ -12,7 +12,7 @@ export default function PythonCard() {
     <>
       <SectionNoDiag
         id=""
-        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-[35vh]"
+        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-full"
       >
         <div className="flex justify-evenly">
           <FaPython className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />

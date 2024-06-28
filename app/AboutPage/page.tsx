@@ -27,13 +27,13 @@ export default function page() {
     <>
       <NavBar />
       <div className="inline-flex justify-between w-full overflow-hidden">
-        <div className="px-[25px] pt-[15px] w-full sm:w-[85%]">
+        <div className="px-[15px] pt-[15px] w-full sm:w-[85%]">
           <h1 id="top" className="text-4xl pb-[25px]">
             // About Page
           </h1>
 
           <div className="inline-block justify-center">
-            <SectionBorderLines id="" className="w-full">
+            <SectionBorderLines id="" className="w-fit ">
               <h1 className="text-4xl">//Introduction</h1>
               <p className="text-xl">
                 Hello! I'm <span className="text-cybpnk-ylw2">Esam Khalid</span>

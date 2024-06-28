@@ -36,7 +36,7 @@ export default function LanguageCarousel() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative ">
         {Cards[currentCard]}
         <button onClick={showPreviousImage} className="carouselBtn left-0">
           <FaArrowLeft />

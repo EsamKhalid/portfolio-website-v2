@@ -12,7 +12,7 @@ export default function JavaCard() {
     <>
       <SectionNoDiag
         id=""
-        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-[35vh]"
+        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-full"
       >
         <div className="flex justify-evenly">
           <FaJava className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
@@ -32,7 +32,7 @@ export default function JavaCard() {
         <div className="">
           <p className="border border-cybpnk-brdr p-2 m-10 ">
             I first started learning Java at the start of the first year of
-            university, where we learnt basic java using the
+            university, where we learnt basic java using the {""}
             <a
               className="text-cybpnk-ylw2 underline underline-offset-2"
               href="https://processing.org"
