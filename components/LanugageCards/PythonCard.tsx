@@ -9,10 +9,15 @@ import { FaStarHalf } from "react-icons/fa";
 export default function PythonCard() {
   return (
     <>
-      <SectionBorderLines id="" className="rounded w-[60vw]">
+      <SectionBorderLines
+        id=""
+        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw]"
+      >
         <div className="flex justify-evenly">
-          <FaPython className="size-[100px] m-5 ml-12" />
-          <h1 className="text-4xl text-center m-[50px]">Python</h1>
+          <FaPython className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
+          <h1 className="text-4xl text-center m-[15%] sm:m-[7.5%] md:m-[10%]">
+            Python
+          </h1>
         </div>
         <div className="flex justify-evenly">
           <h1 className="text-2xl">Experience: </h1>
