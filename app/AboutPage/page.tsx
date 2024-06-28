@@ -10,6 +10,7 @@ import SectionNavigation from "@/components/SectionNavigation/SectionNavigation"
 import FlatCornerBox from "@/components/Shapes/FlatCornerBox";
 import SectionBorderLines from "@/components/Sections/SectionBorderLines";
 import DiagonalLines from "@/components/Shapes/DiagonalLines";
+import LanguageCarousel from "@/components/Carousel/LanguageCarousel";
 
 import { BiArrowFromLeft } from "react-icons/bi";
 
@@ -55,15 +56,7 @@ export default function page() {
             <SectionBorderLines id="" className="w-full">
               <h1 className="text-4xl">//Skills</h1>
               <h2 className="text-2xl text-left">//Languages</h2>
-              <div className="inline-block [&_#icon]:w-[100px] [&_#icon]:h-[100px]">
-                <div className="flex">
-                  <FaPython id="icon" />
-                  <h1>python</h1>
-                </div>
-
-                <FaJava id="icon" />
-                <FaJs id="icon" />
-              </div>
+              <LanguageCarousel />
             </SectionBorderLines>
           </div>
         </div>

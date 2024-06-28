@@ -7,7 +7,7 @@ import { FaPython } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 
-export default function PythonCard() {
+export default function JsCard() {
   return (
     <>
       <SectionNoDiag
@@ -17,7 +17,7 @@ export default function PythonCard() {
         <div className="flex justify-evenly">
           <FaPython className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
           <h1 className="text-4xl text-center m-[15%] sm:m-[7.5%] md:m-[10%]">
-            Python
+            JavaScript
           </h1>
         </div>
         <div className="flex justify-evenly">

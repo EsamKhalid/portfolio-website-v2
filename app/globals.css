@@ -214,7 +214,7 @@ body {
   }
 
   .carouselBtn {
-    @apply block absolute top-0 bottom-0 p-[1rem] transition duration-100 ease-in-out rounded
+    @apply block absolute top-0 bottom-0 -m-2  p-[1rem] transition duration-100 ease-in-out rounded
   }
 
    .carouselBtn:hover {

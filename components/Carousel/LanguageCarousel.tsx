@@ -8,12 +8,13 @@ import TestCard from "../LanugageCards/TestCard";
 import PythonCard from "../LanugageCards/PythonCard";
 import JavaCard from "../LanugageCards/JavaCard";
 import CsCard from "../LanugageCards/CsCard";
+import JsCard from "../LanugageCards/JsCard";
 
 const Cards: JSX.Element[] = [
   <PythonCard />,
   <JavaCard />,
   <CsCard />,
-  <TestCard title="Test4"></TestCard>,
+  <JsCard />,
 ];
 
 export default function LanguageCarousel() {

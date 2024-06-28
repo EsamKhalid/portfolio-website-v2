@@ -1,6 +1,7 @@
 import React from "react";
 
 import SectionBorderLines from "../Sections/SectionBorderLines";
+import SectionNoDiag from "../Sections/SectionNoDiag";
 
 import { FaJava } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -9,9 +10,9 @@ import { FaStarHalf } from "react-icons/fa";
 export default function JavaCard() {
   return (
     <>
-      <SectionBorderLines
+      <SectionNoDiag
         id=""
-        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw]"
+        className="rounded md:w-[60vw] sm:w-[70vw] w-[89vw] h-[35vh]"
       >
         <div className="flex justify-evenly">
           <FaJava className="size-[25%] sm:size-[10%] sm:m-[5%] m-[10%] md:size-[15%] md:m-5 md:ml-12" />
@@ -54,7 +55,7 @@ export default function JavaCard() {
             <br />
           </p>
         </div>
-      </SectionBorderLines>
+      </SectionNoDiag>
     </>
   );
 }
