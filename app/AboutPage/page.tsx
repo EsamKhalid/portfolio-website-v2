@@ -61,7 +61,6 @@ export default function page() {
                   <h1>python</h1>
                 </div>
 
-                <CSharp width="100px" height="100px" />
                 <FaJava id="icon" />
                 <FaJs id="icon" />
               </div>

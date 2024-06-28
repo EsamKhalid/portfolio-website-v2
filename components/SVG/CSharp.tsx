@@ -1,15 +1,14 @@
 import React from "react";
 
 interface Props {
-  width: string;
-  height: string;
+  className: string;
 }
 
-export default function CSharp({ width, height }: Props) {
+export default function CSharp({ className }: Props) {
   return (
     <>
-      <div>
-        <svg viewBox="0 0 1343 1471.2" width={width} height={height}>
+      <div className={className}>
+        <svg viewBox="0 0 1343 1471.2">
           <title>csharp</title>
           <path
             fill="#ffff"

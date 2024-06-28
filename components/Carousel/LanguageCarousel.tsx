@@ -7,11 +7,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestCard from "../LanugageCards/TestCard";
 import PythonCard from "../LanugageCards/PythonCard";
 import JavaCard from "../LanugageCards/JavaCard";
+import CsCard from "../LanugageCards/CsCard";
 
 const Cards: JSX.Element[] = [
   <PythonCard />,
   <JavaCard />,
-  <TestCard title="Test3"></TestCard>,
+  <CsCard />,
   <TestCard title="Test4"></TestCard>,
 ];
 
