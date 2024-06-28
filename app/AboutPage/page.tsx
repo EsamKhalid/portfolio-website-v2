@@ -17,6 +17,7 @@ import { BiArrowFromLeft } from "react-icons/bi";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 import CSharp from "@/components/SVG/CSharp";
 
@@ -57,6 +58,8 @@ export default function page() {
               <h1 className="text-4xl">//Skills</h1>
               <h2 className="text-2xl text-left">//Languages</h2>
               <LanguageCarousel />
+              <h2 className="text-2xl text-left pt-10">//Frameworks</h2>
+              <h2 className="text-2xl text-left pt-10">//Libraries</h2>
             </SectionBorderLines>
           </div>
         </div>

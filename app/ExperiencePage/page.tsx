@@ -1,9 +1,9 @@
 import React from "react";
 
 import NavBar from "@/components/NavBar/NavBar";
-import TestCard from "@/components/LanugageCards/TestCard";
+import TestCard from "@/components/LanguageCards/TestCard";
 
-import PythonCard from "@/components/LanugageCards/PythonCard";
+import PythonCard from "@/components/LanguageCards/PythonCard";
 import LanguageCarousel from "@/components/Carousel/LanguageCarousel";
 
 export default function page() {

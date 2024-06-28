@@ -4,17 +4,19 @@ import React from "react";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import TestCard from "../LanugageCards/TestCard";
-import PythonCard from "../LanugageCards/PythonCard";
-import JavaCard from "../LanugageCards/JavaCard";
-import CsCard from "../LanugageCards/CsCard";
-import JsCard from "../LanugageCards/JsCard";
+import TestCard from "../LanguageCards/TestCard";
+import PythonCard from "../LanguageCards/PythonCard";
+import JavaCard from "../LanguageCards/JavaCard";
+import CsCard from "../LanguageCards/CsCard";
+import JsCard from "../LanguageCards/JsCard";
+import TsxCard from "../LanguageCards/TsxCard";
 
 const Cards: JSX.Element[] = [
   <PythonCard />,
   <JavaCard />,
   <CsCard />,
   <JsCard />,
+  <TsxCard />,
 ];
 
 export default function LanguageCarousel() {

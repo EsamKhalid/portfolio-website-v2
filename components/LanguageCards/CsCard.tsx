@@ -23,7 +23,7 @@ export default function CsCard() {
           </h1>
         </div>
         <div className="flex justify-evenly">
-          <h1 className="text-2xl">Experience: </h1>
+          <h1 className="text-2xl">Proficiency: </h1>
           <div className="flex [&_*]:mx-1 mt-2 align-middle">
             <FaStar />
             <FaStar />
