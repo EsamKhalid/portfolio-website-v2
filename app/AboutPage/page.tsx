@@ -7,19 +7,16 @@ import { motion } from "framer-motion";
 
 import NavBar from "@/components/NavBar/NavBar";
 import SectionNavigation from "@/components/SectionNavigation/SectionNavigation";
-import FlatCornerBox from "@/components/Shapes/FlatCornerBox";
 import SectionBorderLines from "@/components/Sections/SectionBorderLines";
-import DiagonalLines from "@/components/Shapes/DiagonalLines";
 import LanguageCarousel from "@/components/Carousel/LanguageCarousel";
 
-import { BiArrowFromLeft } from "react-icons/bi";
+import styled from "styled-components";
 
-import { FaPython } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 
-import CSharp from "@/components/SVG/CSharp";
+import { SiTailwindcss } from "react-icons/si";
+
+import { FaReact, FaCaretRight } from "react-icons/fa";
 
 export default function page() {
   const [rotate, setRotate] = React.useState(false);
@@ -34,7 +31,7 @@ export default function page() {
           </h1>
 
           <div className="inline-block justify-center">
-            <SectionBorderLines id="" className="w-fit ">
+            <SectionBorderLines id="" className="w-fit">
               <h1 className="text-4xl">//Introduction</h1>
               <p className="text-xl">
                 Hello! I'm <span className="text-cybpnk-ylw2">Esam Khalid</span>
@@ -56,17 +53,52 @@ export default function page() {
             <div className="h-[10vh]"></div>
             <SectionBorderLines id="" className="w-full">
               <h1 className="text-4xl">//Skills</h1>
-              <h2 className="text-2xl text-left">//Languages</h2>
+              <h1 className="text-3xl text-left my-5">//Technical Skills</h1>
+              <h2 className="text-2xl text-left mb-2">//Languages</h2>
               <LanguageCarousel />
               <h2 className="text-2xl text-left pt-10">//Web_Stack</h2>
-              <div className="inline-block justify-start w-full ">
+              <div className="inline-block justify-start w-full [&_*]:py-1">
                 <div className="logoTextCenter">
-                  <FaReact style={{ verticalAlign: "bottom" }} /> <h1>test</h1>
+                  <FaReact className="mx-2 size-[4%]" />
+                  <h1 className="text-lg">React.Js : Frontend</h1>
                 </div>
+                <div className="logoTextCenter">
+                  <SiNextdotjs className="mx-2 size-[4%]" />
+                  <h1 className="text-lg">Next.Js : React Framework</h1>
+                </div>
+                <div className="logoTextCenter">
+                  <SiTailwindcss className="mx-2 size-[4%]" />
+                  <h1 className="text-lg">TailwindCSS : CSS Framework</h1>
+                </div>
+                <h1 className="text-3xl text-left mt-5">//Soft Skills</h1>
+                <ul className="[&_li]:text-left [&_li]:text-lg">
+                  <li className="logoTextCenter">
+                    <FaCaretRight className="size-[3%]" />
+                    <p>Problem Solving</p>
+                  </li>
+                  <li className="logoTextCenter">
+                    <FaCaretRight className="size-[3%]" />
+                    <p>Effective Communication</p>
+                  </li>
+                  <li className="logoTextCenter">
+                    <FaCaretRight className="size-[3%]" />
+                    <p>Teamwork and Collaboration</p>
+                  </li>
+                  <li className="logoTextCenter">
+                    <FaCaretRight className="size-[3%]" />
+                    <p>Adaptability</p>
+                  </li>
+                  <li className="logoTextCenter">
+                    <FaCaretRight className="size-[3%]" />
+                    <p>Time Management</p>
+                  </li>
+                </ul>
               </div>
             </SectionBorderLines>
+            <div className="h-[10vh]"></div>
           </div>
         </div>
+
         <div
           className="w-[15%] fixed  h-full sm:right-0 sm:top-[100px]   
         md:top-[200px] md:right-0"
