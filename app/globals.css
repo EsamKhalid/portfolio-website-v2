@@ -89,15 +89,9 @@ body {
     md:p-5 sm:text-xl md:text-2xl p-1
   } */
 
-  .navbar ul li {
+  /* .navbar ul li {
     @apply text-sm  cursor-pointer hover:bg-jms-blue
-  }
-
-  .navbar ul .mainLink{
-    @apply mx-5
-  }
-
- 
+  } */
 
   .NavLogoContainer a{
     @apply hover:bg-jms-blue m-[5px] flex items-center justify-center hover:border-corners-sm

@@ -13,13 +13,15 @@ export default function PageLink({ text, link }: props) {
   return (
     <>
       <motion.div
-        className="mx-5 size-fit"
+        className={
+          isHovered ? "mx-5 size-fit bg-jms-blue p-2" : "mx-5 size-fit p-2"
+        }
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{
           y: isHovered ? -10 : 0,
           scale: isHovered ? 1.1 : 1,
-          transition: { duration: 0.2 },
+          transition: { duration: 0.45 },
         }}
       >
         <CornerBorder
@@ -29,7 +31,7 @@ export default function PageLink({ text, link }: props) {
           borderGap="3px"
         >
           <Link href={link}>
-            <li>{text}</li>
+            <li className="text-lg">{text}</li>
           </Link>
         </CornerBorder>
       </motion.div>
