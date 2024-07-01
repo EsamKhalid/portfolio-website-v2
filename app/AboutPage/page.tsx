@@ -60,15 +60,27 @@ export default function page() {
               <div className="inline-block justify-start w-full [&_*]:py-1">
                 <div className="logoTextCenter">
                   <FaReact className="mx-2 size-[4%]" />
-                  <h1 className="text-lg">React.Js : Frontend</h1>
+                  <h1 className="text-lg hover:text-cybpnk-ylw2 hover:underline">
+                    <a href="https://react.dev" target="_blank">
+                      React.Js : Frontend
+                    </a>
+                  </h1>
                 </div>
                 <div className="logoTextCenter">
                   <SiNextdotjs className="mx-2 size-[4%]" />
-                  <h1 className="text-lg">Next.Js : React Framework</h1>
+                  <h1 className="text-lg  hover:text-cybpnk-ylw2 hover:underline">
+                    <a href="https://nextjs.org" target="_blank">
+                      Next.Js : React Framework
+                    </a>
+                  </h1>
                 </div>
                 <div className="logoTextCenter">
                   <SiTailwindcss className="mx-2 size-[4%]" />
-                  <h1 className="text-lg">TailwindCSS : CSS Framework</h1>
+                  <h1 className="text-lg  hover:text-cybpnk-ylw2 hover:underline">
+                    <a href="https://tailwindcss.com" target="_blank">
+                      TailwindCSS : CSS Framework
+                    </a>
+                  </h1>
                 </div>
                 <h1 className="text-3xl text-left mt-5">//Soft Skills</h1>
                 <ul className="[&_li]:text-left [&_li]:text-lg">
@@ -99,7 +111,7 @@ export default function page() {
             <SectionBorderLines id="" className="w-fit text-left">
               <h1 className="text-4xl text-center">//Hobbies and Interests</h1>
               <h2 className="text-2xl text-left mb-2">//Bouldering</h2>
-              <p className="text-lg text-justify mx-5">
+              <p className="text-lg text-justify mx-5 mb-5">
                 I started bouldering in April of 2024, and I have loved every
                 second of it. It has been a great way to keep fit and stay
                 active, especially in a field like computer science where a
@@ -113,7 +125,7 @@ export default function page() {
                 other.
               </p>
               <h2 className="text-2xl text-left mb-2">//Video Games</h2>
-              <p className="text-lg text-justify mx-5">
+              <p className="text-lg text-justify mx-5 mb-5">
                 I am an avid gamer and have been playing video games for most of
                 my life since my first ever console the Nintendo Wii. Video
                 games are what originally sparked an interest in coding because
