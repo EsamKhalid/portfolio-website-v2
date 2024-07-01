@@ -6,6 +6,7 @@ import Image from "next/image";
 import TestImg from "./testImg.png";
 
 import CornerBorder from "../Borders/CornerBorder";
+import PageLink from "./PageLink";
 
 import { FaFontAwesomeLogoFull, FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -15,6 +16,7 @@ import { SiLeetcode } from "react-icons/si";
 import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
+import Page from "@/app/ProjectsPage/page";
 
 /*
 function NavBar() {
@@ -50,10 +52,12 @@ function NavBar() {
     return controls.stop;
   }, [xTranslation, width]);
 
+  const [isHovered, setHovered] = useState(false);
+
   return (
     <>
       <div className="overflow-hidden">
-        <nav className="navbar flex justify-between bg-black text-white items-center px-[3vw] pt-[10px]  w-screen scale">
+        <nav className="navbar flex justify-between bg-black text-white items-center px-[3vw] pt-[10px] w-screen">
           <Link
             href="../"
             className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
@@ -68,22 +72,10 @@ function NavBar() {
             </CornerBorder>
           </Link>
 
-          <ul className="text-center list-none">
-            <Link href="/AboutPage">
-              <li>About Me</li>
-            </Link>
-
-            <Link href="/ProjectsPage">
-              <li>Projects</li>
-            </Link>
-
-            <Link href="/ExperiencePage">
-              <li>Experience</li>
-            </Link>
-
-            <Link href="/ContactPage">
-              <li>Contact</li>
-            </Link>
+          <ul className="text-center list-none inline-flex">
+            <PageLink text="About Me" link="/AboutPage" />
+            <PageLink text="Projects" link="/ProjectsPage" />
+            <PageLink text="Contact" link="/ContactPage" />
           </ul>
           <div className="NavLogoContainer flex justify-between">
             <Link
