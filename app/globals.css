@@ -239,6 +239,11 @@ body {
     display: none;
   }
 }
+
+.projectFlex {
+  transition: 200ms ease-in-out;
+  @apply hover:flex-[6] hover:cursor-pointer 
+}
   
 }
 
