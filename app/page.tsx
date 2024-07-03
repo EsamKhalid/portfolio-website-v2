@@ -11,6 +11,8 @@ import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import SectionNoDiag from "@/components/Sections/SectionNoDiag";
 
+import placeholder from "@/Images/placeholder.avif";
+
 export default function Home() {
   return (
     <>
@@ -53,10 +55,41 @@ export default function Home() {
               </p>
             </SectionBorderLines>
             <div className="flex w-full h-[50%]">
-              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex"></div>
-              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex"></div>
-              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex"></div>
-              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex"></div>
+              <div
+                className="size-full flex justify-center border border-cybpnk-ylw2 flex-1 projectFlex"
+                style={{ alignItems: "center" }}
+              >
+                <Image
+                  fill={false}
+                  className="size-[80%] m-auto"
+                  src={placeholder}
+                  alt="image"
+                />
+              </div>
+              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex">
+                <Image
+                  fill={false}
+                  className="size-full"
+                  src={placeholder}
+                  alt="image"
+                />
+              </div>
+              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex">
+                <Image
+                  fill={false}
+                  className="size-full"
+                  src={placeholder}
+                  alt="image"
+                />
+              </div>
+              <div className="size-full bg-jms-blue border border-cybpnk-ylw2 flex-1 projectFlex">
+                <Image
+                  fill={false}
+                  className="size-full"
+                  src={placeholder}
+                  alt="image"
+                />
+              </div>
             </div>
           </div>
         </div>
