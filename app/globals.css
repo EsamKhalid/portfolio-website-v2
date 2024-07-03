@@ -233,6 +233,12 @@ body {
   display: flex;
   align-items: center;
 }
+
+#socials{
+  @media (min-width: 360px){
+    display: none;
+  }
+}
   
 }
 

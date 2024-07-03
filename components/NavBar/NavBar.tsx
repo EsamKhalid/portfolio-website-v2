@@ -68,8 +68,9 @@ function NavBar() {
               borderThickness="2px"
               borderGap="3px"
             >
-              <div className="inline-block sm:flexjustify-center">
-                <h1 className="text-xl sm:text-2xl ">Esam</h1>
+              <div className="inline-block sm:flex justify-center">
+                <h1 className="text-xl sm:text-2xl">Esam&nbsp;</h1>
+                <p> </p>
                 <h1 className="text-xl sm:text-2xl ">Khalid</h1>
               </div>
             </CornerBorder>
