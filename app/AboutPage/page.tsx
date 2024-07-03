@@ -33,7 +33,7 @@ export default function page() {
           <div className="inline-block justify-center">
             <SectionBorderLines id="" className="w-fit">
               <h1 className="text-4xl">//Introduction</h1>
-              <p className="text-xl text-justify">
+              <p className="text-xl text-justify m-5">
                 Hello! I'm <span className="text-cybpnk-ylw2">Esam Khalid</span>
                 , a passionate and dedicated computer science student at Aston
                 University, currently pursuing a BSc Hons in Computer Science

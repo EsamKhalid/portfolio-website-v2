@@ -13,9 +13,7 @@ export default function PageLink({ text, link }: props) {
   return (
     <>
       <motion.div
-        className={
-          isHovered ? "mx-5 size-fit bg-jms-blue p-2" : "mx-5 size-fit p-2"
-        }
+        className={isHovered ? "mx-5 size-fit p-2" : "mx-5 size-fit p-2"}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{
