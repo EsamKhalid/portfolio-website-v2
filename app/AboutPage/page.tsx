@@ -24,8 +24,8 @@ export default function page() {
   return (
     <>
       <NavBar />
-      <div className="inline-flex justify-between w-full overflow-hidden">
-        <div className="px-[15px] pt-[15px] w-full sm:w-[85%]">
+      <div className="px-[5px] inline-flex justify-between w-full overflow-hidden">
+        <div className=" pt-[15px] w-full sm:w-[85%]">
           <h1 id="top" className="text-4xl pb-[25px]">
             // About Page
           </h1>

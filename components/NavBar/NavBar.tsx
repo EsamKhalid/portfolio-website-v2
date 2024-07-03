@@ -57,10 +57,10 @@ function NavBar() {
   return (
     <>
       <div className="overflow-hidden">
-        <nav className="navbar flex justify-between bg-black text-white items-center px-[3vw] pt-[10px] w-screen">
+        <nav className="navbar flex justify-between bg-black text-white items-center px-[2vw]  pt-[10px] w-screen">
           <Link
             href="../"
-            className="hover:bg-jms-blue rounded scale-[.85] p-[10px] m-[-10px]"
+            className="hover:bg-jms-blue rounded scale-[.85] p-[5px] "
           >
             <CornerBorder
               className=""
@@ -68,7 +68,10 @@ function NavBar() {
               borderThickness="2px"
               borderGap="3px"
             >
-              <h1 className="p-2 text-xl sm:text-2xl">Esam Khalid</h1>
+              <div className="inline-block sm:flexjustify-center">
+                <h1 className="text-xl sm:text-2xl ">Esam</h1>
+                <h1 className="text-xl sm:text-2xl ">Khalid</h1>
+              </div>
             </CornerBorder>
           </Link>
 
@@ -77,7 +80,7 @@ function NavBar() {
             <PageLink text="Projects" link="/ProjectsPage" />
             <PageLink text="Contact" link="/ContactPage" />
           </ul>
-          <div className="NavLogoContainer flex justify-between">
+          <div className="NavLogoContainer sm:flex justify-between">
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/esam-khalid-49648728b/"

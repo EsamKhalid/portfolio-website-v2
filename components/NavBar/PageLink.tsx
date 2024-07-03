@@ -13,7 +13,7 @@ export default function PageLink({ text, link }: props) {
   return (
     <>
       <motion.div
-        className={isHovered ? "mx-5 size-fit p-2" : "mx-5 size-fit p-2"}
+        className="px-2 sm:mx-5 md:mx-5 size-fit p-2 h-auto"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{
@@ -23,14 +23,19 @@ export default function PageLink({ text, link }: props) {
         }}
       >
         <CornerBorder
-          className="size-fit"
+          className="size-full"
           cornerSize="9px"
           borderThickness="2px"
           borderGap="3px"
         >
-          <Link href={link}>
-            <li className="text-lg">{text}</li>
-          </Link>
+          <div
+            className="flex justify-center size-full"
+            style={{ alignItems: "center" }}
+          >
+            <Link href={link}>
+              <li className="text-lg">{text}</li>
+            </Link>
+          </div>
         </CornerBorder>
       </motion.div>
     </>
