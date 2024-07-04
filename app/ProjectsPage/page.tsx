@@ -112,7 +112,7 @@ export default function Page() {
   return (
     <>
       <NavBar />
-      <div className="px-[25px] pt-[15px]">
+      <div className="px-[25px] pt-[15px] overflow-hidden">
         <h1 className="text-4xl pb-[25px]">// Projects Page</h1>
         <div className="flex justify-center">
           <SortableGrid>{tilesList}</SortableGrid>
