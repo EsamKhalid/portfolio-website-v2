@@ -26,12 +26,12 @@ export default function page() {
       <NavBar />
       <div className="px-[5px] md:px-[15px] flex justify-between w-full overflow-hidden">
         <div className=" pt-[15px] w-full sm:w-[80%] md:w-[85%]">
-          <h1 id="top" className="text-4xl pb-[25px]">
+          <h1 id="Top" className="text-4xl pb-[25px]">
             // About Page
           </h1>
 
           <div className="inline-block justify-center">
-            <SectionBorderLines id="" className="w-fit">
+            <SectionBorderLines id="Introduction" className="w-fit">
               <h1 className="text-4xl">//Introduction</h1>
               <p className="text-xl text-justify m-5">
                 Hello! I'm <span className="text-cybpnk-ylw2">Esam Khalid</span>
@@ -51,7 +51,7 @@ export default function page() {
               </p>
             </SectionBorderLines>
             <div className="h-[10vh]"></div>
-            <SectionBorderLines id="" className="w-full">
+            <SectionBorderLines id="Skills" className="w-full">
               <h1 className="text-4xl">//Skills</h1>
               <h1 className="text-3xl text-left my-5">//Technical Skills</h1>
               <h2 className="text-2xl text-left mb-2">//Languages</h2>
@@ -108,7 +108,7 @@ export default function page() {
               </div>
             </SectionBorderLines>
             <div className="h-[10vh]"></div>
-            <SectionBorderLines id="" className="w-fit text-left">
+            <SectionBorderLines id="Hobbies" className="w-fit text-left">
               <h1 className="text-4xl text-center">//Hobbies and Interests</h1>
               <h2 className="text-2xl text-left mb-2">//Bouldering</h2>
               <p className="text-lg text-justify mx-5 mb-5">
