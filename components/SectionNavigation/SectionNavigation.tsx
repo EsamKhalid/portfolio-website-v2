@@ -15,14 +15,12 @@ interface ValueProps {
   Value1: String;
   Value2: String;
   Value3: String;
-  Value4: String;
 }
 
 export default function SectionNavigation({
   Value1,
   Value2,
   Value3,
-  Value4,
   Value0,
 }: ValueProps) {
   const [isHovered, setHovered] = useState(false);
@@ -35,7 +33,6 @@ export default function SectionNavigation({
           <NavElement Value1={Value1} />
           <NavElement Value1={Value2} />
           <NavElement Value1={Value3} />
-          <NavElement Value1={Value4} />
           <DiagonalLines
             className="h-[20px] mb-[-5px]"
             bgsize="15px"
