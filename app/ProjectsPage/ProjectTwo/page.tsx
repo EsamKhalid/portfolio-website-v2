@@ -1,12 +1,19 @@
 import React from "react";
 
-import NavBar from "@/components/NavBar/NavBar";
+import Image from "next/image";
+
+import placeholder from "@/Images/placeholder.avif";
+
+import Project from "@/components/ProjectsSection/Project";
 
 export default function page() {
   return (
     <>
-      <NavBar />
-      <h1>Project Two</h1>
+      <Project
+        ProjectName="Project Two"
+        ProjectImage={placeholder}
+        ProjectType="Personal"
+      ></Project>
     </>
   );
 }
