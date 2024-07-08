@@ -58,6 +58,10 @@ export default function Page() {
       <NavBar />
       <div className="px-[25px] pt-[15px] overflow-hidden">
         <h1 className="text-4xl pb-[25px]">// Projects Page</h1>
+        <p className="text-lg text-justify mx-5 my-3">
+          Welcome to the Projects Page, here you can view all of the projects
+          that I both feel proud of and think that it is worth sharing
+        </p>
         <div className="flex justify-center">
           <SortableGrid>{tilesList}</SortableGrid>
         </div>
