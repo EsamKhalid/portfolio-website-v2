@@ -7,58 +7,7 @@ import ProjectTile from "@/components/ProjectsSection/ProjectTile";
 import SortableGrid from "@/components/ProjectsSection/SortableGrid";
 
 import placeholder from "../../Images/placeholder.avif";
-
-/*
-export default function Page() {
-  return (
-    <>
-      <NavBar />
-      <div className="px-[25px] pt-[15px]">
-        <h1 className="text-4xl pb-[25px]">// Projects Page</h1>
-        <div className="flex justify-center">
-          <SortableGrid>
-            <ProjectTile
-              ProjectTitle="Project One"
-              ImageSource={placeholder}
-              ProjectType="Personal Project"
-              StartDate="19/06/24"
-              EndDate="29/06/25"
-            />
-            <ProjectTile
-              ProjectTitle="Project One"
-              ImageSource={placeholder}
-              ProjectType="Personal Project"
-              StartDate="19/06/24"
-              EndDate="29/06/25"
-            />
-            <ProjectTile
-              ProjectTitle="Project One"
-              ImageSource={placeholder}
-              ProjectType="Personal Project"
-              StartDate="19/06/24"
-              EndDate="29/06/25"
-            />
-            <ProjectTile
-              ProjectTitle="Project One"
-              ImageSource={placeholder}
-              ProjectType="Personal Project"
-              StartDate="19/06/24"
-              EndDate="29/06/25"
-            />
-            <ProjectTile
-              ProjectTitle="Project One"
-              ImageSource={placeholder}
-              ProjectType="Personal Project"
-              StartDate="19/06/24"
-              EndDate="29/06/25"
-            />
-          </SortableGrid>
-        </div>
-      </div>
-    </>
-  );
-}
-  */
+import alvl from "@/Images/alevelproj.png";
 
 export default function Page() {
   const tilesList = [
@@ -74,9 +23,9 @@ export default function Page() {
     <ProjectTile
       className=""
       key={2}
-      ProjectTitle="Project Two"
-      ImageSource={placeholder}
-      ProjectType="Personal Project"
+      ProjectTitle="A-Level Coursework"
+      ImageSource={alvl}
+      ProjectType="Personal/Sixth Form Project"
       StartDate={new Date("2024-06-07")}
       EndDate="29/06/25"
     />,

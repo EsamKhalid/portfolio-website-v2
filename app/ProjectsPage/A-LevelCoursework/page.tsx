@@ -14,6 +14,7 @@ export default function page() {
         ProjectName="A-Level Coursework"
         ProjectImage={alvlimg}
         ProjectType="Personal/Sixth Form"
+        EndDate="16/04/2023"
       ></Project>
     </>
   );

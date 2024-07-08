@@ -18,7 +18,6 @@ interface ProjectTileProps {
 export default function ProjectTile({
   ProjectTitle,
   ProjectType,
-  StartDate,
   EndDate,
   ImageSource,
   className,
@@ -40,23 +39,19 @@ export default function ProjectTile({
           borderGap="3px"
         >
           <div
-            className="inline-block border border-cybpnk-brdr rounded  p-2 [&_*]:p-1 md:[&_*]:p-2
+            className="inline-block border border-cybpnk-brdr rounded w-full p-2 [&_*]:p-1 md:[&_*]:p-2
         min-h-full min-w-fit"
           >
-            <h1 className="text-4xl text-nowrap">{"// " + ProjectTitle}</h1>
+            <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
             <Image
               fill={false}
-              className="sm:w-[200px] sm:h-[200px] md:min-w-[250px]  md:min-h-[250px]"
+              className=" sm:h-[200px] md:min-w-[250px]  md:min-h-[250px] w-full"
               src={ImageSource}
               alt="image"
             />
             <h2 className="text-lg">
               <span className="text-xs m-[-5px]">//Type:</span> <br />
               {ProjectType}
-            </h2>
-            <h2 className="text-lg">
-              <span className="text-xs m-[-8px]">//Start_Date: </span> <br />
-              {new Date(StartDate).toLocaleDateString()}
             </h2>
             <h2 className="text-lg">
               <span className="text-xs m-[-8px]">//End_Date: </span> <br />

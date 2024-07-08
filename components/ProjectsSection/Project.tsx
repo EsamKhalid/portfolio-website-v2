@@ -9,12 +9,14 @@ interface ProjectProps {
   ProjectName: string;
   ProjectImage: StaticImageData;
   ProjectType: string;
+  EndDate: string;
 }
 
 export default function Project({
   ProjectName,
   ProjectImage,
   ProjectType,
+  EndDate,
 }: ProjectProps) {
   return (
     <>
@@ -43,8 +45,7 @@ export default function Project({
             <div className="hidden sm:flex justify-center text-3xl h-[25vh] text-center">
               <div className="flex flex-col  justify-between w-full border border-cybpnk-brdr p-[5%]">
                 <h1>// Project_Type : {ProjectType}</h1>
-                <h1>// End_Date : {ProjectName}</h1>
-                <h1>// Difficulty : {ProjectName}</h1>
+                <h1>// End_Date : {EndDate}</h1>
                 <DiagonalLines
                   className="w-full end"
                   bgsize="15px"
