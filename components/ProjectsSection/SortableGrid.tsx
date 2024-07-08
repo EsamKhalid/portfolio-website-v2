@@ -37,7 +37,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
     //populates the dateList array with the start dates of the projects
     React.Children.map(children, (child) => {
       if (React.isValidElement(child) && child.type === ProjectTile) {
-        dateList.push(child.props.StartDate.getTime());
+        dateList.push(child.props.EndDate.getTime());
       }
     });
 
@@ -76,7 +76,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
             </Link>
           );
           if (
-            dateList[i] === child.props.StartDate.getTime() &&
+            dateList[i] === child.props.EndDate.getTime() &&
             !keyList.includes(child.key)
           ) {
             console.log(newOutList.includes(childOut));

@@ -17,8 +17,7 @@ export default function Page() {
       ProjectTitle="Project One"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate={new Date("2024-06-18")}
-      EndDate="29/06/25"
+      EndDate={new Date("2024-06-18")}
     />,
     <ProjectTile
       className=""
@@ -26,8 +25,7 @@ export default function Page() {
       ProjectTitle="A-Level Coursework"
       ImageSource={alvl}
       ProjectType="Personal/Sixth Form Project"
-      StartDate={new Date("2024-06-07")}
-      EndDate="29/06/25"
+      EndDate={new Date("2023-04-16")}
     />,
     <ProjectTile
       className=""
@@ -35,8 +33,7 @@ export default function Page() {
       ProjectTitle="Project Three"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate={new Date("2024-06-15")}
-      EndDate="29/06/25"
+      EndDate={new Date("2024-06-15")}
     />,
     <ProjectTile
       className=""
@@ -44,8 +41,7 @@ export default function Page() {
       ProjectTitle="Project Four"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate={new Date("2024-06-22")}
-      EndDate="29/06/25"
+      EndDate={new Date("2024-06-22")}
     />,
     <ProjectTile
       className=""
@@ -53,8 +49,7 @@ export default function Page() {
       ProjectTitle="Project Five"
       ImageSource={placeholder}
       ProjectType="Personal Project"
-      StartDate={new Date("2024-08-22")}
-      EndDate="29/06/25"
+      EndDate={new Date("2024-08-22")}
     />,
   ];
 

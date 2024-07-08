@@ -9,8 +9,7 @@ import { motion } from "framer-motion";
 interface ProjectTileProps {
   ProjectTitle: string;
   ProjectType: string;
-  StartDate: Date;
-  EndDate: string;
+  EndDate: Date;
   ImageSource: StaticImageData;
   className: string;
 }
@@ -55,7 +54,7 @@ export default function ProjectTile({
             </h2>
             <h2 className="text-lg">
               <span className="text-xs m-[-8px]">//End_Date: </span> <br />
-              {EndDate}
+              {EndDate.toLocaleDateString()}
             </h2>
             <DiagonalLines
               className="mt-[10px] h-[18px]"
