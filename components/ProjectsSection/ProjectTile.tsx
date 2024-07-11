@@ -25,20 +25,20 @@ export default function ProjectTile({
   return (
     <>
       <motion.div
-        className="hover:cursor-pointer"
+        className="hover:cursor-pointer size-full"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{ scale: isHovered ? 1.05 : 1 }}
         transition={{ duration: 0.2 }}
       >
         <CornerBorder
-          className={"min-h-fit min-w-fit " + className}
+          className={"size-full " + className}
           cornerSize="15px"
           borderThickness="2px"
           borderGap="3px"
         >
           <div
-            className="inline-block border border-cybpnk-brdr rounded w-full p-2 [&_*]:p-1 md:[&_*]:p-2
+            className="flex flex-col justify-between border border-cybpnk-brdr rounded w-full p-2 [&_*]:p-1 md:[&_*]:p-2
         min-h-full min-w-fit"
           >
             <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
