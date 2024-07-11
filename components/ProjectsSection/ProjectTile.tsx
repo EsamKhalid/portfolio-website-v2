@@ -49,11 +49,11 @@ export default function ProjectTile({
               alt="image"
             />
             <h2 className="text-lg">
-              <span className="text-xs m-[-5px]">//Type:</span> <br />
+              <span className="text-lg m-[-5px]">//Type:</span> <br />
               {ProjectType}
             </h2>
             <h2 className="text-lg">
-              <span className="text-xs m-[-8px]">//End_Date: </span> <br />
+              <span className="text-lg m-[-8px]">//Completed: </span> <br />
               {EndDate.toLocaleDateString()}
             </h2>
             <DiagonalLines

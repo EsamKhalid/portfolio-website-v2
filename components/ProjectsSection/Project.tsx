@@ -53,7 +53,7 @@ export default function Project({
             <div className="flex flex-col w-full justify-between border border-cybpnk-brdr p-[5%]">
               <div className="flex flex-col justify-between h-full mb-5">
                 <h1>// Project_Type : {ProjectType}</h1>
-                <h1>// End_Date : {EndDate}</h1>
+                <h1>// Completed : {EndDate}</h1>
               </div>
 
               <DiagonalLines

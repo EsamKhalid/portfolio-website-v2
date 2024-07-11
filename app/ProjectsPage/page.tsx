@@ -63,7 +63,7 @@ export default function Page() {
           that I both feel proud of and think that it is worth sharing. It's a
           collection of both personal projects which I have planned out and made
           by myself or assignments from university or sixth form that I am
-          particualrly proud of that have scored well.
+          particualrly proud of.
         </p>
         <div className="flex justify-center">
           <SortableGrid>{tilesList}</SortableGrid>
