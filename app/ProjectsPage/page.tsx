@@ -17,7 +17,7 @@ export default function Page() {
       key={1}
       ProjectTitle="IAD Portfolio 1"
       ImageSource={iad1pic}
-      ProjectType="university Assignment"
+      ProjectType="University Assignment"
       EndDate={new Date("2024-02-21")}
     />,
     <ProjectTile

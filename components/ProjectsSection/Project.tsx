@@ -50,9 +50,14 @@ export default function Project({
 
         <div className="flex justify-center text-xl md:text-3xl h-[25vh] w-full text-center">
           <div className="flex justify-center w-full sm:w-[50%]">
-            <div className="flex flex-col w-full justify-between border border-cybpnk-brdr p-[5%]">
+            <div className="flex flex-col w-full justify-between border h-fit border-cybpnk-brdr p-[5%]">
               <div className="flex flex-col justify-between h-full mb-5">
                 <h1>// Project_Type : {ProjectType}</h1>
+                {ProjectType === "University Assignment" ? (
+                  <h1>// Marks : 81/100</h1>
+                ) : (
+                  ""
+                )}
                 <h1>// Completed : {EndDate}</h1>
               </div>
 
