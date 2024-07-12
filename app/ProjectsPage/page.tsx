@@ -7,8 +7,10 @@ import ProjectTile from "@/components/ProjectsSection/ProjectTile";
 import SortableGrid from "@/components/ProjectsSection/SortableGrid";
 
 import placeholder from "../../Images/placeholder.avif";
+
 import alvl from "@/Images/alevelproj.png";
 import iad1pic from "@/Images/iad1pic.png";
+import webv1pic from "@/Images/webv1pic.png";
 
 export default function Page() {
   const tilesList = [
@@ -31,8 +33,8 @@ export default function Page() {
     <ProjectTile
       className=""
       key={3}
-      ProjectTitle="Project Three"
-      ImageSource={placeholder}
+      ProjectTitle="Portfolio Website V1"
+      ImageSource={webv1pic}
       ProjectType="Personal Project"
       EndDate={new Date("2024-06-15")}
     />,

@@ -35,7 +35,7 @@ export default function Project({
               alt=""
             />
             <div className="w-full flex justify-center">
-              <div className="text-6xl sm:text-7xl text-center w-fit mb-10">
+              <div className="text-6xl sm:text-7xl text-center w-fit mb-10 text-nowrap">
                 <h1>{ProjectName}</h1>
                 <DiagonalLines
                   className="mt-2 h-5"
@@ -48,10 +48,10 @@ export default function Project({
           </div>
         </div>
 
-        <div className="flex justify-center text-xl md:text-3xl h-[25vh] w-full text-center">
+        <div className="flex justify-center text-xl md:text-3xl h-fit mb-10 w-full text-center">
           <div className="flex justify-center w-full sm:w-[50%]">
             <div className="flex flex-col w-full justify-between border h-fit border-cybpnk-brdr p-[5%]">
-              <div className="flex flex-col justify-between h-full mb-5">
+              <div className="flex flex-col justify-between h-full mb-5=">
                 <h1>// Project_Type : {ProjectType}</h1>
                 {ProjectType === "University Assignment" ? (
                   <h1>// Marks : 81/100</h1>
@@ -72,7 +72,7 @@ export default function Project({
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full sm:w-[80%] mt-7 border border-cybpnk-brdr text-5xl">
+          <div className="w-full sm:w-[80%] border border-cybpnk-brdr text-5xl">
             <h2 className="text-4xl text-left m-2 mx-1">//Project_Overview</h2>
             {children}
           </div>
