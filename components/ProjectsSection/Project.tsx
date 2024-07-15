@@ -10,6 +10,7 @@ interface ProjectProps {
   ProjectImage: StaticImageData;
   ProjectType: string;
   EndDate: string;
+  Score?: number;
   //DownFiles: string; // Make this a string of the zip file basically
   children: React.ReactNode;
 }
@@ -20,6 +21,7 @@ export default function Project({
   ProjectType,
   EndDate,
   children,
+  Score,
 }: ProjectProps) {
   //For future refrerence, change it so that the text in each section for the project is passed as a prop
   return (
@@ -54,7 +56,7 @@ export default function Project({
               <div className="flex flex-col justify-between h-full mb-5=">
                 <h1>// Project_Type : {ProjectType}</h1>
                 {ProjectType === "University Assignment" ? (
-                  <h1>// Marks : 81/100</h1>
+                  <h1>// Marks : {Score?.toString()}/100</h1>
                 ) : (
                   ""
                 )}

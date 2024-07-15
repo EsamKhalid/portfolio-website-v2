@@ -17,7 +17,7 @@ interface SortableGridProps {
 }
 
 export default function SortableGrid({ children }: SortableGridProps) {
-  var selectValue = "DateAscending";
+  var selectValue = "DateDescending";
 
   const [dateList, setDateList] = useState<number[]>([]);
 
@@ -90,10 +90,6 @@ export default function SortableGrid({ children }: SortableGridProps) {
     setOutList(newOutList);
   }
 
-  const str: string = "hello world";
-
-  console.log(str.replace(/\s/g, ""));
-
   return (
     <>
       <div>
@@ -101,8 +97,8 @@ export default function SortableGrid({ children }: SortableGridProps) {
           onChange={handleSelect}
           className="text-white bg-black w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5"
         >
-          <option value="DateAscending">Date Ascending</option>
           <option value="DateDescending">Date Descending</option>
+          <option value="DateAscending">Date Ascending</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-5">
           {outList}

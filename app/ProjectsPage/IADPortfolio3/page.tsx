@@ -16,7 +16,7 @@ export default function page() {
         ProjectImage={iad1pic}
         ProjectType="University Assignment"
         EndDate="21/02/2024"
-        Score={81}
+        Score={100}
       >
         <p className="text-lg text-justify mx-5 my-3">
           IAD portfolio 1 was the first portfolio task set to us in the CS1IAD
