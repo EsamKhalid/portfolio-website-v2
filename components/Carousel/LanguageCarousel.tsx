@@ -12,11 +12,11 @@ import JsCard from "../LanguageCards/JsCard";
 import TsxCard from "../LanguageCards/TsxCard";
 
 const Cards: JSX.Element[] = [
-  <PythonCard />,
-  <JavaCard />,
-  <CsCard />,
-  <JsCard />,
-  <TsxCard />,
+  <PythonCard key={1} />,
+  <JavaCard key={2} />,
+  <CsCard key={3} />,
+  <JsCard key={4} />,
+  <TsxCard key={5} />,
 ];
 
 export default function LanguageCarousel() {

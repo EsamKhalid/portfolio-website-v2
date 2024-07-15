@@ -19,7 +19,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaReact, FaCaretRight } from "react-icons/fa";
 
 export default function page() {
-  const [rotate, setRotate] = React.useState(false);
+  const [Rotate, setRotate] = React.useState(false);
 
   return (
     <>
@@ -28,7 +28,6 @@ export default function page() {
       <div className="px-[5px] md:px-[15px] flex justify-between w-full overflow-hidden">
         <div className=" pt-[15px] w-full sm:w-[80%] md:w-[85%]">
           <h1 className="text-4xl pb-[25px]">// About Page</h1>
-
           <div className="inline-block justify-center">
             <SectionBorderLines id="Introduction" className="w-fit">
               <h1 className="text-4xl">//Introduction</h1>
