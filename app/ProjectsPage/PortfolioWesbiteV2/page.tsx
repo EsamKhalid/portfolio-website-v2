@@ -25,19 +25,22 @@ export default function page() {
           decided to make this website using javascript frameworks and libaries
           mainly{" "}
           <span className="text-cybpnk-ylw2">
-            <a>React.js</a>
+            <a href="https://nextjs.org">React.js</a>
           </span>
           ,{" "}
           <span className="text-cybpnk-ylw2">
-            <a>Next.js</a>
+            <a href="https://nextjs.org">Next.js</a>
           </span>{" "}
           and{" "}
           <span className="text-cybpnk-ylw2">
-            <a>Tailwind.css</a>
+            <a href="https://tailwindcss.com">Tailwind.css</a>
           </span>
           . The use of these libraries would allow me to develop the website to
           a much higher standard and quicker than if I were to use pure html ,
-          css and js.
+          css and js. The use of these frameworks and libraries is 100% entirely
+          self taught using a combination of youtube videos and reading
+          documentation as well as some experimentation using trial and error to
+          learn the practical uses of the stuff I learnt.
         </p>
       </Project>
     </>

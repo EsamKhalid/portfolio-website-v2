@@ -10,6 +10,7 @@ import placeholder from "../../Images/placeholder.avif";
 
 import alvl from "@/Images/alevelproj.png";
 import iad1pic from "@/Images/iad1pic.png";
+import iad3pic from "@/Images/iad3pic.png";
 import webv1pic from "@/Images/webv1pic.png";
 import webv2pic from "@/Images/webv2pic.png";
 
@@ -50,10 +51,10 @@ export default function Page() {
     <ProjectTile
       className=""
       key={5}
-      ProjectTitle="Project Five"
-      ImageSource={placeholder}
-      ProjectType="Personal Project"
-      EndDate={new Date("2024-08-22")}
+      ProjectTitle="IAD Portfolio 3"
+      ImageSource={iad3pic}
+      ProjectType="University Assignment"
+      EndDate={new Date("2024-04-23")}
     />,
   ];
 
