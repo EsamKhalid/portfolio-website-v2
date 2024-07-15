@@ -18,12 +18,9 @@ export default function SectionBorderLines({
     <>
       <div
         id={id}
-        className={
-          "inline-block justify-center border border-cybpnk-brdr text-center " +
-          className
-        }
+        className={"inline-block  border border-cybpnk-brdr text-center w-full"}
       >
-        <div className=" justify-center inline-block p-2">
+        <div className="inline-block justify-start p-2 w-full">
           <div className={"w-full p-[0px] pb-[0px]  text-wrap " + className}>
             {children}
           </div>

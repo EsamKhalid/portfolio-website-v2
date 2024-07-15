@@ -23,12 +23,11 @@ export default function page() {
 
   return (
     <>
+      <div id="Top" className="hidden size-0 "></div>
       <NavBar />
       <div className="px-[5px] md:px-[15px] flex justify-between w-full overflow-hidden">
         <div className=" pt-[15px] w-full sm:w-[80%] md:w-[85%]">
-          <h1 id="Top" className="text-4xl pb-[25px]">
-            // About Page
-          </h1>
+          <h1 className="text-4xl pb-[25px]">// About Page</h1>
 
           <div className="inline-block justify-center">
             <SectionBorderLines id="Introduction" className="w-fit">
@@ -108,7 +107,7 @@ export default function page() {
               </div>
             </SectionBorderLines>
             <div className="h-[10vh]"></div>
-            <SectionBorderLines id="Hobbies" className="w-fit text-left">
+            <SectionBorderLines id="Hobbies" className="w-fit">
               <h1 className="text-4xl text-center">//Hobbies and Interests</h1>
               <h2 className="text-2xl text-left mb-2">//Bouldering</h2>
               <p className="text-lg text-justify mx-5 mb-5">
@@ -160,6 +159,16 @@ export default function page() {
               </p>
             </SectionBorderLines>
             <div className="h-[10vh]"></div>
+            <SectionBorderLines id="Contact" className="">
+              <h1 className="text-4xl text-center">//Contact</h1>
+              <h2 className="text-2xl text-left mb-2">
+                //Email : esam-khalid@outlook.com
+              </h2>
+              <h2 className="text-2xl text-left mb-2">
+                //University Email : 230022805@aston.ac.uk
+              </h2>
+            </SectionBorderLines>
+            <div className="h-[10vh]"></div>
           </div>
         </div>
 
@@ -173,6 +182,7 @@ export default function page() {
               Value1={"Introduction"}
               Value2={"Skills"}
               Value3={"Hobbies"}
+              Value4={"Contact"}
             />
           </div>
         </div>

@@ -46,8 +46,8 @@ export default function Home() {
                 <br /> Through my academic and personal projects, I have honed
                 my skills in various programming languages and technologies. My
                 portfolio showcases a range of projects, including an Aim
-                Trainer developed in Unity, a Tic Tac Toe game with AI
-                capabilities, and this very portfolio website.
+                Trainer developed in Unity, university projects completed to
+                professional standard , and this very portfolio website.
                 <br />
                 <br /> Explore my work and see how my experiences and education
                 have shaped my approach to problem-solving and innovation in the
