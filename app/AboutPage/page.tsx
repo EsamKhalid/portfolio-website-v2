@@ -142,7 +142,7 @@ export default function page() {
               <h2 className="text-2xl text-left mb-2">//Coding</h2>
               <p className="text-lg text-justify mx-5">
                 My passion and love for coding has spanned much further than my
-                degree and career and has implemented itself as one of my
+                degree and education and has implemented itself as one of my
                 favourite hobbies and past times. Well before choosing to pursue
                 computer science as a career I would spend time building
                 something with code, starting in secondary school where I would
