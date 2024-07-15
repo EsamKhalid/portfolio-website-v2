@@ -13,7 +13,7 @@ export default function page() {
         ProjectName="Portfolio Website V2"
         ProjectImage={webv2pic}
         ProjectType="Personal Project"
-        EndDate="31/03/2024"
+        EndDate="15/07/2024"
       >
         <p className="text-lg text-justify mx-5 my-3">
           <br />

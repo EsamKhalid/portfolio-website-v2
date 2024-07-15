@@ -38,7 +38,7 @@ export default function Page() {
       ProjectTitle="Portfolio Website V1"
       ImageSource={webv1pic}
       ProjectType="Personal Project"
-      EndDate={new Date("2024-06-15")}
+      EndDate={new Date("2024-03-31")}
     />,
     <ProjectTile
       className=""
@@ -46,7 +46,7 @@ export default function Page() {
       ProjectTitle="Portfolio Wesbite V2"
       ImageSource={webv2pic}
       ProjectType="Personal Project"
-      EndDate={new Date("2024-06-22")}
+      EndDate={new Date("2024-07-15")}
     />,
     <ProjectTile
       className=""
