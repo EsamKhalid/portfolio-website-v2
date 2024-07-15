@@ -19,49 +19,19 @@ interface SortableGridProps {
 export default function SortableGrid({ children }: SortableGridProps) {
   var selectValue = "DateDescending";
 
-  const [dateList, setDateList] = useState<number[]>([]);
+  const [DateList, SetDateList] = useState<number[]>([]);
 
-  const [outList, setOutList] = useState<ReactNode[]>([]);
+  const [OutList, setOutList] = useState<ReactNode[]>([]);
 
   const childList: ReactNode[] = [];
 
   let keyList: any[] = [];
 
-  useEffect(() => {
-    sortElements();
-  }, []);
-
-  function sortDates() {
-    //resets the date list
-    setDateList([]);
-    //populates the dateList array with the start dates of the projects
-    React.Children.map(children, (child) => {
-      if (React.isValidElement(child) && child.type === ProjectTile) {
-        dateList.push(child.props.EndDate.getTime());
-      }
-    });
-
-    if (selectValue === "DateAscending") {
-      dateList.sort(function (a, b) {
-        return a - b;
-      });
-    } else if (selectValue === "DateDescending") {
-      dateList.sort(function (a, b) {
-        return b - a;
-      });
-    }
-  }
-
-  function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
-    selectValue = event.target.value;
-    sortElements();
-  }
-
   function sortElements() {
     sortDates();
     setOutList([]);
     let newOutList: React.ReactNode[] = [];
-    for (let i = 0; i < dateList.length; i++) {
+    for (let i = 0; i < DateList.length; i++) {
       React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === ProjectTile) {
           var childOut = (
@@ -76,7 +46,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
             </Link>
           );
           if (
-            dateList[i] === child.props.EndDate.getTime() &&
+            DateList[i] === child.props.EndDate.getTime() &&
             !keyList.includes(child.key)
           ) {
             console.log(newOutList.includes(childOut));
@@ -90,6 +60,36 @@ export default function SortableGrid({ children }: SortableGridProps) {
     setOutList(newOutList);
   }
 
+  useEffect(() => {
+    sortElements();
+  }, []);
+
+  function sortDates() {
+    //resets the date list
+    SetDateList([]);
+    //populates the DateList array with the start dates of the projects
+    React.Children.map(children, (child) => {
+      if (React.isValidElement(child) && child.type === ProjectTile) {
+        DateList.push(child.props.EndDate.getTime());
+      }
+    });
+
+    if (selectValue === "DateAscending") {
+      DateList.sort(function (a, b) {
+        return a - b;
+      });
+    } else if (selectValue === "DateDescending") {
+      DateList.sort(function (a, b) {
+        return b - a;
+      });
+    }
+  }
+
+  function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
+    selectValue = event.target.value;
+    sortElements();
+  }
+
   return (
     <>
       <div>
@@ -101,7 +101,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
           <option value="DateAscending">Date Ascending</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-5">
-          {outList}
+          {OutList}
         </div>
       </div>
     </>

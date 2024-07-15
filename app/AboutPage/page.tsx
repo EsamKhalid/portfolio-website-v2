@@ -19,7 +19,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaReact, FaCaretRight } from "react-icons/fa";
 
 export default function page() {
-  const [Rotate, setRotate] = React.useState(false);
+  const [Rotate, SetRotate] = React.useState(false);
 
   return (
     <>
