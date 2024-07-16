@@ -28,7 +28,7 @@ export default function Project({
     <>
       <NavBar />
       <div className="px-[25px] pt-[15px] ">
-        <h1 className="text-4xl pb-[25px]">// {ProjectName}</h1>
+        <h1 className="text-2xl  sm:text-4xl pb-[25px]">// {ProjectName}</h1>
         <div className="flex justify-center">
           <div className="flex flex-col size-full sm:flex-col justify-center md:size-[45%]">
             <Image
@@ -37,7 +37,7 @@ export default function Project({
               alt=""
             />
             <div className="w-full flex justify-center">
-              <div className="text-6xl sm:text-7xl text-center w-fit mb-10 text-nowrap">
+              <div className="text-4xl sm:text-7xl text-center w-fit mb-10 text-nowrap">
                 <h1>{ProjectName}</h1>
                 <DiagonalLines
                   className="mt-2 h-5"
