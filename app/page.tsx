@@ -34,6 +34,37 @@ export default function Home() {
                 </Link>
               </div>
             </SectionNoDiag>
+
+            <SectionBorderLines id="" className="w-[90vw]">
+              <h1 className="text-2xl">Currently Looking For Placement</h1>
+              <br />
+              <p className="text-xl">
+                I am currently in my second year of my computer science degree
+                and am looking to undertake a 2025/26 placement year. Any
+                companies looking for a passionate and dedicated computer
+                science student, please feel free to contact me at{" "}
+                <span className="text-cybpnk-ylw2">
+                  esam-khalid@outlook.com
+                </span>
+                .
+              </p>
+              <p></p>
+              <object
+                className="text-white"
+                data="http://africau.edu/images/default/sample.pdf"
+                type="application/pdf"
+                width="100%"
+                height="100%"
+              >
+                <p>
+                  Alternative text - include a link{" "}
+                  <a href="http://africau.edu/images/default/sample.pdf">
+                    to the PDF!
+                  </a>
+                </p>
+              </object>
+            </SectionBorderLines>
+            <div className="h-[15px]"></div>
             <SectionBorderLines id="" className="w-[90vw]">
               <h1 className="text-2xl">Welcome to My Portfolio</h1>
               <br />
