@@ -46,23 +46,7 @@ export default function Home() {
                 <span className="text-cybpnk-ylw2">
                   esam-khalid@outlook.com
                 </span>
-                .
               </p>
-              <p></p>
-              <object
-                className="text-white"
-                data="http://africau.edu/images/default/sample.pdf"
-                type="application/pdf"
-                width="100%"
-                height="100%"
-              >
-                <p>
-                  Alternative text - include a link{" "}
-                  <a href="http://africau.edu/images/default/sample.pdf">
-                    to the PDF!
-                  </a>
-                </p>
-              </object>
             </SectionBorderLines>
             <div className="h-[15px]"></div>
             <SectionBorderLines id="" className="w-[90vw]">
