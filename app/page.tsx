@@ -13,6 +13,7 @@ import SectionNoDiag from "@/components/Sections/SectionNoDiag";
 
 import placeholder from "@/Images/placeholder.avif";
 
+
 export default function Home() {
   return (
     <>
@@ -46,6 +47,9 @@ export default function Home() {
                 <span className="text-cybpnk-ylw2">
                   esam-khalid@outlook.com
                 </span>
+                {" "}or message me on my <span className="text-cybpnk-ylw2"><a href="https://www.linkedin.com/in/esam-khalid/">LinkedIn</a></span>
+                <br></br>
+                
               </p>
             </SectionBorderLines>
             <div className="h-[15px]"></div>
