@@ -1,6 +1,11 @@
 import Axios from "axios";
 
-export default async function handler(req, res) {
+import { NextApiRequest, NextApiResponse } from "next";
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const response = await fetch(
     "https://ddragon.leagueoflegends.com/cdn/15.4.1/data/en_US/champion.json"
   );
