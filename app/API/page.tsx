@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 import NavBar from "@/components/NavBar/NavBar";
 
-export default function page() {
+export default function Page() {
   const [champions, setChampions] = useState([]);
   const [error, setError] = useState<string | null>(null);
 
